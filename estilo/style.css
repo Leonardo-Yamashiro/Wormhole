@@ -43,11 +43,14 @@ nav a{
     color: white;
     padding: 5px 10px 5px 5px;
     font-variant: small-caps;
+    display: inline-block;
+    margin: auto;
+    text-align: justify;
+    border-radius: 15px;
 }
 nav a:hover{
     background-color: white;
     color: darkred;
-    border-radius: 10px;
 }
 
 
