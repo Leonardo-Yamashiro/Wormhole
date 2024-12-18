@@ -13,46 +13,14 @@ body{
 }
 
 
-header{
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0px 5px 5px rgba(44, 0, 0, 0.274);
-}
-header h1{
-    color: darkred;
-    font-size: 3em;
-}
-header div{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 10px;
-}
-header div.container{
-    position: relative;
-    max-width: 1500px;
-    height: 50px;
-}
-header div.conteudo{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-header div img{
-    max-height: 50px;
-    max-width: 50px;
-}
-
-
 nav{
-    background-color: darkred;
+    background-color: white;
     box-shadow: 0px 5px 5px rgba(44, 0, 0, 0.274);
     text-align: center;
 }
 nav a{
     text-decoration: none;
-    color: white;
+    color: darkred;
     padding: 5px;
     font-variant: small-caps;
     display: inline-block;
@@ -64,14 +32,18 @@ nav a:hover{
     color: white;
 }
 a.atual{
-    background-color: white;
-    color: darkred;
-    border-radius: 0%;
+    background-color: darkred;
+    color: white;
 }
 a.atual:hover{
-    background-color: white;
-    color: darkred;
-    border-radius: 0%;
+    background-color: darkred;
+    color: white;
+}
+nav img{
+    display: inline-block;
+    max-width: 30px;
+    max-height: 30px;
+    padding: 5px;
 }
 
 
