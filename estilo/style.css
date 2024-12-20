@@ -97,6 +97,19 @@ main a:hover{
     background-color: darkred;
     color: white;
 }
+main div.vid{
+    margin: auto;
+    position: relative;
+    padding-bottom: 56.4%;
+}
+main div.vid video{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
 
 
 footer{
