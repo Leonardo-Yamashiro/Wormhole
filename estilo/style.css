@@ -9,13 +9,13 @@
 
 body{
     min-height: 100vh;
-    background-image: linear-gradient(135deg,red,darkred);
+    /*background-image: linear-gradient(135deg,red,darkred);*/
 }
 
 
 nav{
     background-color: white;
-    box-shadow: 0px 5px 5px rgba(44, 0, 0, 0.274);
+    /*box-shadow: 0px 5px 5px rgba(44, 0, 0, 0.274);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,8 +68,8 @@ main{
     margin: auto;
     padding: 10px;
     border-radius: 15px;
-    border: 2px solid red;
-    box-shadow: 0px 5px 5px rgba(44, 0, 0, 0.274);
+    /*border: 2px solid red;
+    box-shadow: 0px 5px 5px rgba(44, 0, 0, 0.274);*/
 }
 main h1{
     color: darkred;
@@ -97,18 +97,17 @@ main a:hover{
     background-color: darkred;
     color: white;
 }
-main div.vid{
+div.vid{
     margin: auto;
     position: relative;
     padding-bottom: 56.4%;
 }
-main div.vid video{
+div.vid video{
     position: absolute;
     top: 0%;
     left: 0%;
     height: 100%;
     width: 100%;
-    border-radius: 15px;
 }
 
 
