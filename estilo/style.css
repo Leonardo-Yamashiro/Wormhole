@@ -112,10 +112,13 @@ div.vid video{
 div.produtoA{
     display: inline-block;
     width: 280px;
+    vertical-align: top;
 }
 div.produtoB{
     display: inline-block;
     width: 1000px;
+    height: 500px;
+    vertical-align: middle;
 }
 iframe{
     width: 100%;
