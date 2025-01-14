@@ -111,14 +111,15 @@ div.vid video{
 }
 div.produtoA{
     display: inline-block;
-    width: fit-content;
+    width: 280px;
 }
 div.produtoB{
     display: inline-block;
+    width: 1000px;
 }
 iframe{
     width: 100%;
-    background-color: white;
+    height: 100%;
     border: 2px solid black;
     overflow-x: auto;
 }
