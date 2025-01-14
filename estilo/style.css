@@ -79,19 +79,19 @@ main h1{
 main p{
     text-align: justify;
     text-indent: 30px;
-    padding: 20px;
+    padding: 10px 25px;
     line-height: 1em;
     list-style-position: inside;
 }
 main li{
     text-align: justify;
     text-indent: 30px;
-    padding: 10px;
+    padding: 10px 25px;
     line-height: 1em;
     list-style-position: inside;
 }
 main ul,main ol{
-    padding: 20px;
+    padding: 10px;
 }
 main a{
     text-decoration: none;
@@ -121,7 +121,7 @@ div.vid video{
 }
 div.produtoA{
     display: inline-block;
-    max-width: 280px;
+    width: 280px;
     vertical-align: top;
 }
 div.produtoB{
