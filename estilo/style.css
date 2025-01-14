@@ -53,6 +53,13 @@ nav img{
     vertical-align: middle;
     padding-right: 19.5vw;
 }
+nav a.image{
+    background-color: white;
+    padding: 0px;
+}
+nav a.image:hover{
+    background-color: white;
+}
 
 
 main{
