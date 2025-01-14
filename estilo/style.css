@@ -109,6 +109,19 @@ div.vid video{
     height: 100%;
     width: 100%;
 }
+div.produtoA{
+    display: inline-block;
+    width: fit-content;
+    background-color: red;
+}
+div.produtoB{
+    display: inline-block;
+    background-color: blue;
+}
+iframe{
+    width: 100%;
+    background-color: white;
+}
 
 
 footer{
