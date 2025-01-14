@@ -49,16 +49,16 @@ nav a.atual:hover{
 nav img{
     max-height: 50px;
     display: inline-block;
-    padding: 5px;
     vertical-align: middle;
-    padding-right: 19.5vw;
+    padding: 0px 50px;
 }
 nav a.image{
     background-color: white;
-    padding: 0%;
+    padding: 0px 50px;
 }
 nav a.image:hover{
     background-color: white;
+    padding: 0px 50px;
 }
 
 
@@ -89,18 +89,21 @@ main>ul>li>ol>li{
 main a{
     text-decoration: none;
     color: darkred;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px;
     border-radius: 10px;
 }
 main a:hover{
     background-color: darkred;
     color: white;
 }
+main a::after{
+    content: " [link]";
+    font-size: 0.8em;
+}
 div.vid{
     margin: auto;
     position: relative;
     padding-bottom: 91.83vh;
-    background-color: whitesmoke;
 }
 div.vid video{
     position: absolute;
