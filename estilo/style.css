@@ -106,6 +106,7 @@ div.vid{
     margin: auto;
     position: relative;
     padding-bottom: 80vh;
+    background-image: linear-gradient(to top, black, transparent);
 }
 div.vid video{
     position: absolute;
