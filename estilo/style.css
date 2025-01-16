@@ -153,6 +153,10 @@ iframe{
     overflow-x: auto;
     background-color: white;
 }
+.vidinicio{
+    width: 99.77vw;
+    height: 600px;
+}
 
 
 footer{
