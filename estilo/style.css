@@ -64,8 +64,6 @@ nav a.image:hover{
 main{
     max-width: 1000px;
     margin: auto;
-    /*border: 2px solid red;
-    box-shadow: 0px 5px 5px rgba(44, 0, 0, 0.274);*/
 }
 main h1{
     color: darkred;
@@ -103,11 +101,11 @@ main a:hover{
 main a::after{
     content: " [link]";
     font-size: 0.7em;
-}/*
+}
 div.vid{
     margin: auto;
     position: relative;
-    padding-bottom: 91.83vh;
+    padding-bottom: 80vh;
 }
 div.vid video{
     position: absolute;
@@ -115,11 +113,12 @@ div.vid video{
     left: 0%;
     height: 100%;
     width: 100%;
-}*/
+}
 video.vid{
     width: 100%;
     margin: auto;
     align-items: center;
+    vertical-align: middle;
 }
 div.produtoA{
     display: inline-block;
@@ -152,10 +151,6 @@ iframe{
     border: 2px solid black;
     overflow-x: auto;
     background-color: white;
-}
-.vidinicio{
-    width: 99.77vw;
-    height: 600px;
 }
 
 
