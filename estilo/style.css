@@ -92,9 +92,13 @@ main p{
 }
 main li{
     text-align: justify;
-    padding: 10px 20px;
+    text-indent: 20px;
+    padding: 10px;
     line-height: 1em;
     list-style-position: inside;
+}
+main ol, main ul{
+    padding: 20px;
 }
 main a{
     text-decoration: none;
