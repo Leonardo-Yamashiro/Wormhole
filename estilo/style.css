@@ -63,7 +63,7 @@ nav a.image:hover{
 
 
 main{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
 }
 main h1{
@@ -107,7 +107,8 @@ main a::after{
 div.vid{
     margin: auto;
     position: relative;
-    padding-bottom: 91.5vh;
+    /*padding-bottom: 91.5vh;*/
+    padding-bottom: 43vw;
     background-image: linear-gradient(to top, black, transparent);
 }
 div.vid video{
@@ -123,20 +124,25 @@ video.vid{
     align-items: center;
     vertical-align: middle;
 }
+div.container{
+    text-align: center;
+    width: 100%;
+}
 div.produtoA{
     display: inline-block;
-    width: 280px;
+    width: 300px;
     vertical-align: top;
 }
 div.produtoB{
     display: inline-block;
-    width: 600px;
+    width: 700px;
     height: 600px;
     vertical-align: top;
 }
 div.arquivopdf{
     display: inline-block;
-    width: 99%;
+    text-align: center;
+    width: 100%;
     height: 400px;
     vertical-align: top;
     padding: 10px;
