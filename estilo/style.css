@@ -73,7 +73,7 @@ main h1{
 }
 main h2{
     color: darkred;
-    text-align: center;
+    text-align: justify;
     padding: 10px;
 }
 main p{
@@ -105,7 +105,7 @@ main a::after{
 div.vid{
     margin: auto;
     position: relative;
-    padding-bottom: 80vh;
+    padding-bottom: 91.5vh;
     background-image: linear-gradient(to top, black, transparent);
 }
 div.vid video{
