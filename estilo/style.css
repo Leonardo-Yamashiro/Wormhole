@@ -79,7 +79,7 @@ main h2{
     padding: 10px;
 }
 main h3{
-    color: black;
+    color: darkred;
     text-align: justify;
     padding: 10px;
     font-size: 1em;
@@ -98,7 +98,10 @@ main li{
     list-style-position: inside;
 }
 main ol, main ul{
-    padding: 20px;
+    padding: 0px 30px;
+}
+main div ol, main div ul{
+    padding: 0px;
 }
 main a{
     text-decoration: none;
@@ -113,6 +116,9 @@ main a:hover{
 main a::after{
     content: " [link]";
     font-size: 0.7em;
+}
+main h3 a{
+    color: black;
 }
 div.vid{
     margin: auto;
