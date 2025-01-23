@@ -33,7 +33,7 @@ nav a{
     text-decoration: none;
     color: darkred;
     font-variant: small-caps;
-    padding: 5px 10px;
+    padding: 5px;
     display: inline-block;
     vertical-align: middle;
     transition-duration: 0.7s;
@@ -57,7 +57,6 @@ nav img{
 }
 nav a.image{
     background-color: white;
-    padding: 0px;
 }
 nav a.image:hover{
     background-color: white;
@@ -82,7 +81,8 @@ nav a.image:hover{
 
 
 main{
-    max-width: 1000px;
+    max-width: 90vw;
+    width: 100%;
     margin: auto;
 }
 main h1{
@@ -154,7 +154,7 @@ div.vid{
 }
 @media screen and (orientation: portrait){
     div.vid{
-        padding-bottom: 83.5vh;
+        padding-bottom: 80vh;
     }
 }
 div.vid video{
@@ -176,7 +176,8 @@ div.container{
 }
 div.produtoA{
     display: inline-block;
-    max-width: 300px;
+    max-width: 270px;
+    width: 100%;
     vertical-align: top;
 }
 div.produtoB{
