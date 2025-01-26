@@ -61,12 +61,12 @@ nav a.image{
 nav a.image:hover{
     background-color: white;
 }
-@media screen and (orientation: landscape){
+@media screen and (min-width: 721px){
     nav img{
         padding: 0px 100px 0px 0px;
     }
 }
-@media screen and (orientation: portrait){
+@media screen and (max-width: 720px){
     nav img{
         padding: 0px;
     }
@@ -147,12 +147,12 @@ div.vid{
     position: relative;
     background-image: linear-gradient(to top, gray, transparent);
 }
-@media screen and (orientation: landscape){
+@media screen and (min-width: 721px){
     div.vid{
         padding-bottom: 43.6vw;
     }
 }
-@media screen and (orientation: portrait){
+@media screen and (max-width: 720px){
     div.vid{
         padding-bottom: 80vh;
     }
