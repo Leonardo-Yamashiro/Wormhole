@@ -180,6 +180,9 @@ div.produtoA{
     width: 100%;
     vertical-align: top;
 }
+div.produtoA li{
+    display: inline-block;
+}
 div.produtoB{
     display: inline-block;
     max-width: 800px;
@@ -203,7 +206,7 @@ iframe{
     background-color: white;
 }
 
-
+/*
 footer{
     background-color: darkred;
     min-height: 200px;
@@ -211,7 +214,7 @@ footer{
     padding: 10px;
     text-align: center;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.397);
-}
+}*/
 
 .teste{
     color: blue;
