@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: white;
-}
-
 
 nav{
     padding: 5px;
@@ -27,6 +23,7 @@ nav a.atual{
     display: block;
     text-decoration: none;
 }
+
 
 main{
     margin: auto;
