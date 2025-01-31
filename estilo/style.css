@@ -191,7 +191,6 @@ div.produtoA ul{
     list-style-type: none;
 }
 div.produtoA li{
-    flex: auto;
     padding: 20px 0px;
     text-align: center;
 }
