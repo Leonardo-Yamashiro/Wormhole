@@ -29,6 +29,7 @@ nav{
     text-align: center;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 nav a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -40,6 +41,7 @@ nav a{
     vertical-align: middle;
     transition-duration: 0.7s;
     flex: auto;
+    min-width: 200px;
 }
 nav a:hover{
     background-color: red;
@@ -184,8 +186,14 @@ div.produtoA{
     width: 100%;
     vertical-align: top;
 }
+div.produtoA ul{
+    display: flex;
+    list-style-type: none;
+}
 div.produtoA li{
-    display: inline-block;
+    flex: auto;
+    padding: 20px 0px;
+    text-align: center;
 }
 div.produtoB{
     display: inline-block;
