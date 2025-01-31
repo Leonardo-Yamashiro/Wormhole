@@ -27,6 +27,8 @@ nav{
     margin: auto;
     line-height: 50px;
     text-align: center;
+    display: flex;
+    flex-flow: row wrap;
 }
 nav a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -37,6 +39,7 @@ nav a{
     display: inline-block;
     vertical-align: middle;
     transition-duration: 0.7s;
+    flex: auto;
 }
 nav a:hover{
     background-color: red;
@@ -60,7 +63,7 @@ nav a.image{
 }
 nav a.image:hover{
     background-color: white;
-}
+}/*
 @media screen and (min-width: 769px){
     nav img{
         padding: 0px 100px 0px 0px;
@@ -72,12 +75,12 @@ nav a.image:hover{
     }
     nav a{
         border-radius: 15px;
-    }/*
+    }
     main>div>div>ul>li{
         display: inline-block;
         padding: 10px 5px;
-    }*/
-}
+    }
+}*/
 
 
 main{
