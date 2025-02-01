@@ -69,6 +69,14 @@ nav img{
     vertical-align: middle;
     flex: auto;
 }
+nav a.image{
+    background-color: white;
+    color: white;
+}
+nav a.image:hover{
+    background-color: white;
+    color: white;
+}
 @media screen and (min-width: 769px){
     nav{
         display: flex;
