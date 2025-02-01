@@ -216,12 +216,13 @@ div.produtoA{
     vertical-align: top;
 }
 div.produtoA ul{
-    display: flex;
+    padding: 0px;
     list-style-type: none;
+    text-align: center;
 }
 div.produtoA li{
-    padding: 20px 0px;
-    text-align: center;
+    padding: 15px 0px;
+    display: inline-block;
 }
 div.produtoB{
     display: inline-block;
