@@ -119,8 +119,10 @@
         <h1>Patentes</h1>
         <h2>Para os Blocos:</h2>
         <p>Brasil: Pedido de patente de invenção de Produto, Processo de Montagem e Processo de Fabricação, com registro no INPI sobre número BR-10-2021-011034-1, com opinião preliminar sobre a patenteabilidade positiva;</p>
-        <h3>Pedido de Patente no Brasil <a href="pdf/patente/Pedido de Patente Brasil.pdf" target="_blank">ver PDF</a></h3>
-        <div class="arquivopdf">
+        <h3>Pedido de Patente no Brasil</h3>
+        <p><a href="pdf/patente/Pedido de Patente Brasil.pdf" target="_blank">ver PDF em outra guia</a></p>
+        <p><a id="arq001link" onclick="clickArq001()">ver PDF na mesma página</a></p>
+        <div id="arq001frame" class="arquivopdf">
             <iframe src="pdf/patente/Pedido de Patente Brasil.pdf" frameborder="0" name="frame" scolling="yes">Seu navegador não é compativel.</iframe>
         </div>
         <h3>Opinião Preliminar no Brasil <a href="pdf/patente/Opiniao Preliminar Brasil.pdf" target="_blank">ver PDF</a></h3>
@@ -164,6 +166,10 @@
             else{
                 itens.style.display='none'
             }
+        }
+
+        function clickArq001(){
+            arq001frame.style.display="inline-block"
         }
     </script>
 </body>

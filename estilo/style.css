@@ -234,7 +234,7 @@ div.produtoB{
     vertical-align: top;
 }
 div.arquivopdf{
-    display: inline-block;
+    display: none;
     text-align: center;
     width: 100%;
     height: 400px;
