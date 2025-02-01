@@ -166,6 +166,7 @@ main a{
 main a:hover{
     background-color: darkred;
     color: white;
+    cursor: pointer;
 }
 main a::after{
     content: " [link]";
@@ -237,7 +238,7 @@ div.arquivopdf{
     display: none;
     text-align: center;
     width: 100%;
-    height: 400px;
+    height: 600px;
     vertical-align: top;
     padding: 10px 0px;
 }

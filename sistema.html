@@ -169,7 +169,12 @@
         }
 
         function clickArq001(){
-            arq001frame.style.display="inline-block"
+            if(arq001frame.style.display=='block'){
+                arq001frame.style.display='none'
+            }
+            else{
+                arq001frame.style.display='block'
+            }
         }
     </script>
 </body>
