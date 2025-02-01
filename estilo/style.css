@@ -210,9 +210,10 @@ div.container{
     width: 100%;
 }
 div.produtoA{
+    padding: 0px;
     display: inline-block;
     max-width: 800px;
-    width: 100%;
+    width: 90vw;
     vertical-align: top;
 }
 div.produtoA ul{
@@ -225,6 +226,7 @@ div.produtoA li{
     display: inline-block;
 }
 div.produtoB{
+    padding: 0px;
     display: inline-block;
     max-width: 800px;
     width: 100%;
