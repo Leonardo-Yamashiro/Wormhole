@@ -17,11 +17,12 @@ body{
     background-color: whitesmoke;
 }
 
-
+header{
+    background-color: white;
+}
 nav{
     min-height: 50px;
-    background-color: white;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.397);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.334);
     position: sticky;
     top: -1px;
     margin: auto;
@@ -51,19 +52,18 @@ nav a.atual:hover{
     color: white;
 }
 span#burger{
-    background-color: white;
     color: darkred;
     display: block;
     text-align: center;
     padding: 10px;
     cursor: pointer;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.397);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.334);
 }
 span#burger:hover{
     background-color: darkred;
     color: white;
 }
-nav img{
+header img{
     max-height: 50px;
     max-width: 50px;
     vertical-align: middle;
@@ -71,11 +71,9 @@ nav img{
 }
 nav a.image{
     background-color: white;
-    color: white;
 }
 nav a.image:hover{
     background-color: white;
-    color: white;
 }
 @media screen and (min-width: 769px){
     nav{
@@ -90,6 +88,9 @@ nav a.image:hover{
     span#burger{
         display: none;
     }
+    div.image2{
+        display: none;
+    }
 }
 @media screen and (max-width: 768px){
     nav{
@@ -98,9 +99,17 @@ nav a.image:hover{
     nav a{
         display: block;
     }
-    
     span#burger{
         display: block;
+    }
+    nav a.image{
+        display: none;
+    }
+    div.image2{
+        display: block;
+        max-height: 50px;
+        max-width: 50px;
+        margin: auto;
     }
 }
 
