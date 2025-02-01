@@ -23,6 +23,12 @@ nav a.atual{
     display: block;
     text-decoration: none;
 }
+header img{
+    display: none;
+}
+span#burger{
+    display: none;
+}
 
 
 main{
