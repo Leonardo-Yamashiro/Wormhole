@@ -19,12 +19,12 @@ body{
 
 header{
     background-color: white;
+    position: sticky;
+    top: -1px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.334);
 }
 nav{
     min-height: 50px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.334);
-    position: sticky;
-    top: -1px;
     margin: auto;
     line-height: 50px;
     text-align: center;
@@ -58,6 +58,7 @@ span#burger{
     padding: 10px;
     cursor: pointer;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.334);
+    border: 1px solid darkred;
 }
 span#burger:hover{
     background-color: darkred;
