@@ -162,6 +162,7 @@ main a{
     color: darkred;
     padding: 5px 0px;
     border-radius: 9px;
+    transition-duration: 0.7s;
 }
 main a:hover{
     background-color: darkred;
