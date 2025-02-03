@@ -181,31 +181,27 @@ s{
 }
 div.vid{
     margin: auto;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     background-image: linear-gradient(to top, gray, transparent);
 }
 @media screen and (min-width: 769px){
     div.vid{
-        padding-bottom: 43.6vw;
+        height: calc(100vh - 60px);
+    }
+    div.vid video{
+        height: calc(100vh - 60px);
     }
 }
 @media screen and (max-width: 768px){
     div.vid{
-        padding-bottom: 80vh;
+        height: calc(100vh - 100px);
     }
-}
-div.vid video{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-}
-video.vid{
-    width: 100%;
-    margin: auto;
-    align-items: center;
-    vertical-align: middle;
+    div.vid video{
+        width: 100%;
+    }
 }
 div.container{
     text-align: center;
