@@ -189,10 +189,10 @@ div.vid{
 }
 @media screen and (min-width: 769px){
     div.vid{
-        height: calc(100vh - 60px);
+        height: calc(100vh - 62px);
     }
     div.vid video{
-        height: calc(100vh - 60px);
+        height: 100%;
     }
 }
 @media screen and (max-width: 768px){
@@ -211,7 +211,7 @@ div.produtoA{
     padding: 0px;
     display: inline-block;
     max-width: 800px;
-    width: 90vw;
+    width: 100%;
     vertical-align: top;
 }
 div.produtoA ul{
@@ -247,7 +247,7 @@ iframe{
     background-color: white;
 }
 
-/*
+
 footer{
     background-color: darkred;
     min-height: 200px;
@@ -255,7 +255,7 @@ footer{
     padding: 10px;
     text-align: center;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.397);
-}*/
+}
 
 .teste{
     color: blue;
