@@ -37,11 +37,11 @@ nav a{
     font-variant: small-caps;
     padding: 5px;
     vertical-align: middle;
-    transition-duration: 0.7s;
 }
 nav a:hover{
     background-color: red;
     color: white;
+    transition-duration: 0.7s;
 }
 nav a.atual{
     background-color: darkred;
@@ -167,12 +167,12 @@ main a{
     color: darkred;
     padding: 5px 0px;
     border-radius: 9px;
-    transition-duration: 0.7s;
 }
 main a:hover{
     background-color: darkred;
     color: white;
     cursor: pointer;
+    transition-duration: 0.5s;
 }
 main a::after{
     content: " [link]";
