@@ -72,16 +72,21 @@ header img{
     nav{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
-    nav a{
-        flex: auto;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
     nav img{
-        margin: 0px 50px;
+        flex: 1 1 auto;
+    }
+    nav div{
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    nav div a{
+        flex: 0 1 190px;
     }
     menu{
         display: none;
