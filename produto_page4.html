@@ -21,16 +21,16 @@
                 <a href="home.html">Home</a>
                 <a href="sistema.html">MEGG wOrmhOle System</a>
                 <a href="sobre.html">Sobre Nós</a>
-                <p href="produto_page1.html" class="atual">Produtos</p>
+                <p href="produto_page1.html" id="prod" class="atual">Produtos</p>
                 <a href="parceiros.html">Parceiros & Investidores</a>
                 <a href="fale.html">Fale Conosco</a>
             </div>
         </nav>
-        <nav class="navproduto">
+        <nav id="nagsec" class="navproduto">
             <a href="produto_page1.html">Page 1</a>
             <a href="produto_page2.html">Page 2</a>
             <a href="produto_page3.html">Page 3</a>
-            <a href="produto_page4.html">Page 4</a>
+            <a href="produto_page4.html" class="atual">Page 4</a>
             <a href="produto_page5.html">Page 5</a>
         </nav>
     </header>
@@ -43,11 +43,15 @@
         function clickMenu(){
             if(itens.style.display=='block'){
                 itens.style.display='none'
+                nagsec.style.display='none'
+                prod.style.display='none'
                 burger.style.backgroundColor='white'
                 burger.style.color='darkred'
             }
             else{
                 itens.style.display='block'
+                nagsec.style.display='block'
+                prod.style.display='none'
                 burger.style.backgroundColor='darkred'
                 burger.style.color='white'
             }
