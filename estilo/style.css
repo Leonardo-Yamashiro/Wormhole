@@ -90,7 +90,7 @@ header img{
         flex: 1 1 auto;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
     }
     nav.navprincipal div a,nav.navprincipal div p{
