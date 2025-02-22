@@ -104,6 +104,16 @@ header img{
     }
     nav a{
         display: block;
+        border: 1px solid darkred;
+    }
+    nav.navproduto a{
+        background-color: white;
+        color: darkred;
+    }
+    nav.navproduto a:hover{
+        background-color: red;
+        color: white;
+        transition-duration: 0.7s;
     }
     span#burger{
         display: block;
