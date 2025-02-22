@@ -38,16 +38,12 @@ nav a,nav.navprincipal div p{
     padding: 5px;
     vertical-align: middle;
 }
-nav a:hover{
+nav a:hover, nav.navproduto a:hover{
     background-color: red;
     color: white;
     transition-duration: 0.7s;
 }
-nav a.atual,nav.navprincipal div p{
-    background-color: darkred;
-    color: white;
-}
-nav a.atual:hover{
+nav a.atual, nav a.atual:hover, nav.navprincipal div p, nav.navproduto a{
     background-color: darkred;
     color: white;
 }
@@ -80,7 +76,6 @@ header img{
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: center;
-        background-color: darkred;
     }
     nav img{
         flex: 1 1 auto;
