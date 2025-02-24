@@ -243,6 +243,24 @@ iframe{
     overflow-x: auto;
     background-color: white;
 }
+table{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100%;
+}
+table thead{
+    position: relative;
+}
+table tbody{
+    position: sticky;
+    top: -1px;
+}
+table tr,table th,table td{
+    border: 2px solid red;
+}
+table tbody>tr:nth-child(2n){
+    background-color: blue;
+}
 
 
 footer{
