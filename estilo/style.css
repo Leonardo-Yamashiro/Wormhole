@@ -47,6 +47,10 @@ nav a.atual, nav a.atual:hover, nav.navprincipal div p, nav.navproduto a{
     background-color: darkred;
     color: white;
 }
+nav.navproduto a.atual,nav.navproduto a.atual:hover{
+    background-color: white;
+    color: darkred;
+}
 span#burger{
     color: darkred;
     display: block;
