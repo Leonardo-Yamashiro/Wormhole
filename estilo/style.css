@@ -244,22 +244,32 @@ iframe{
     background-color: white;
 }
 table{
-    border: 2px solid black;
-    border-radius: 15px;
     width: 100%;
+    border-collapse: collapse;
+    margin: auto;
 }
 table thead{
     position: relative;
+    background-color: darkred;
+    color: white;
 }
 table tbody{
     position: sticky;
     top: -1px;
 }
-table tr,table th,table td{
-    border: 2px solid red;
+table col.clink{
+    text-align: center;
+}
+table col.cdesk{
+    text-align: justify;
+}
+table th,table td{
+    border: 2px solid darkred;
+    padding: 10px;
+    vertical-align: middle;
 }
 table tbody>tr:nth-child(2n){
-    background-color: blue;
+    background-color: lightgrey;
 }
 
 
