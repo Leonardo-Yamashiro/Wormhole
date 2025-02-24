@@ -19,7 +19,7 @@ nav a{
     display: none;
 }
 nav a.atual{
-    color: darkred;
+    color: black;
     display: block;
     text-decoration: none;
 }
@@ -33,21 +33,23 @@ span#burger{
 
 main{
     margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 main h1{
-    color: darkred;
+    color: black;
     text-align: center;
     padding: 5px;
     font-variant: small-caps;
     font-size: 1.3em;
 }
 main h2{
-    color: darkred;
+    color: black;
     padding: 5px;
     font-size: 1em;
 }
 main h3{
-    color: darkred;
+    color: black;
     padding: 5px;
     font-size: 1em;
 }
@@ -85,33 +87,25 @@ div.vid video{
 video.vid{
     display: none;
 }
-div.container{
-    text-align: center;
-    width: 100%;
-}
-div.produtoA{
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-}
-div.produtoB{
-    display: inline-block;
-    width: 40%;
-    height: 500px;
-    vertical-align: top;
-}
 div.arquivopdf{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    vertical-align: top;
-    padding: 5px 0px;
+    display: none;
 }
 iframe{
     width: 100%;
     height: 100%;
-    border: 1px solid darkred;
+    border: 1px solid black;
     overflow-x: auto;
     background-color: white;
+}
+table{
+    width: 99%;
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table th,table td{
+    padding: 5px;
+    vertical-align: middle;
+    border: 1px solid black;
+    text-align: justify;
 }

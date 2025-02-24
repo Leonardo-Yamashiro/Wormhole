@@ -259,7 +259,6 @@ table thead{
 }
 table col.clink{
     width: 100px;
-    border: 2px solid darkred;
 }
 table th,table td{
     padding: 10px;
@@ -272,6 +271,7 @@ table th{
 }
 table td{
     text-align: justify;
+    border-left: 2px solid darkred;
 }
 table tbody>tr:nth-child(2n){
     background-color: lightgray;
