@@ -43,9 +43,14 @@ nav a:hover, nav.navproduto a:hover{
     color: white;
     transition-duration: 0.7s;
 }
-nav a.atual, nav a.atual:hover, nav.navprincipal div p, nav.navproduto a{
+nav a.atual, nav a.atual:hover, nav.navproduto a{
     background-color: darkred;
     color: white;
+}
+nav.navprincipal div p{
+    background-color: gray;
+    color: white;
+    cursor: default;
 }
 nav.navproduto a.atual,nav.navproduto a.atual:hover{
     background-color: white;
