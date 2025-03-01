@@ -17,13 +17,15 @@ body,html{
     background-color:whitesmoke;
 }
 
+
 header{
     background-color: white;
-    position: fixed;
+    position: sticky;
     width: 100%;
-    top: -1px;
-    right: 0px;
+    top: 0;
+    z-index: 1;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.334);
+    overflow-x: auto;
 }
 nav{
     min-height: 50px;
@@ -33,6 +35,7 @@ nav{
     align-items: center;
 }
 nav a,nav.navprincipal div p{
+    font-weight: bold;
     text-decoration: none;
     color: darkred;
     padding: 5px;
@@ -114,19 +117,6 @@ header img{
         display: block;
         border: 1px solid darkred;
     }
-    nav.navproduto a{
-        background-color: white;
-        color: darkred;
-    }
-    nav.navproduto a:hover{
-        background-color: red;
-        color: white;
-        transition-duration: 0.7s;
-    }
-    nav.navproduto a.atual, nav.navproduto a.atual:hover{
-        background-color: darkred;
-        color: white;
-    }
     span#burger{
         display: block;
     }
@@ -147,21 +137,9 @@ main{
     min-width: 350px;
     width: 90vw;
     margin: auto;
+    padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 20px;
-}
-@media screen and (min-width: 769px){
-    main{
-        padding-top: 70px;
-    }
-    main.prodbody{
-        padding-top: 130px;
-    }
-}
-@media screen and (max-width: 768px){
-    main{
-        padding-top: 100px;
-    }
 }
 main h1{
     color: darkred;
@@ -217,33 +195,7 @@ main a::after{
 s{
     color: darkred;
 }
-div.vid{
-    margin: auto;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    background-image: linear-gradient(to top, gray, transparent);
-}
-@media screen and (min-width: 769px){
-    div.vid{
-        height: calc(100vh - 60px);
-    }
-    div.vid video{
-        height: 100%;
-    }
-}
-@media screen and (max-width: 768px){
-    div.vid{
-        height: calc(100vh - 100px);
-    }
-    div.vid video{
-        width: 100%;
-    }
-}
+
 div.arquivopdf{
     display: none;
     text-align: center;
@@ -258,6 +210,29 @@ iframe{
     border: 2px solid darkred;
     overflow-x: auto;
     background-color: white;
+}
+div.vid{
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+@media screen and (min-width: 769px){
+    div.vid{
+        height: calc(100vh - 60px);
+    }
+    div.vid video{
+        height: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    div.vid{
+        height: calc(100vh - 100px);
+    }
+    div.vid video{
+        width: 100vw;
+    }
 }
 
 
