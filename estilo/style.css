@@ -91,7 +91,7 @@ header img{
         flex: 1 1 auto;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
     }
     nav.navprincipal div a,nav.navprincipal div p{
@@ -176,6 +176,10 @@ main li{
     padding: 10px;
     line-height: 1em;
     list-style-position: inside;
+
+}
+main li::marker{
+    font-weight: bolder;
 }
 main ol, main ul{
     padding: 0px 0px 0px 30px;
