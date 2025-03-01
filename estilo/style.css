@@ -48,8 +48,8 @@ nav a.atual, nav a.atual:hover, nav.navproduto a{
     cursor: default;
 }
 nav.navprincipal div p,nav.navproduto a.atual,nav.navproduto a.atual:hover{
-    background-color: lightgray;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
     cursor: default;
 }
 span#burger{
