@@ -13,7 +13,7 @@
     <header>
         <menu>
             <img src="imagens/Logo/INPI_Logo_M.jpg" alt="Logo">
-            <span id="burger" onclick="clickMenu()">Clique aqui para <strong>abrir/fechar</strong> o menu</span>
+            <span id="burger" onclick="clickMenu();substituir()">Clique aqui para <strong>abrir/fechar</strong> o menu</span>
         </menu>
         <nav id="itens" class="navprincipal">
             <img src="imagens/Logo/INPI_Logo_M.jpg" alt="Logo">
@@ -66,22 +66,15 @@
             }
         }
 
-        function substituirElementos() {
-            if (window.innerWidth <= 768) {
+        function substituir() {
+            if(window.innerWidth<=768){
                 const prod = document.getElementById("prod");
                 const nagsec = document.getElementById("nagsec");
-
-                if (prod && nagsec) {
-                    prod.innerHTML = nagsec.innerHTML;
-                    prod.className = nagsec.className;
-                    nagsec.style.display = "none";
-                }
+                prod.innerHTML = nagsec.innerHTML;
+                prod.className = nagsec.className;
+                nagsec.style.display = 'none';
             }
         }
-
-        document.addEventListener("DOMContentLoaded", substituirElementos);
-
-        window.addEventListener("resize", substituirElementos);
     </script>
 </body>
 </html>
