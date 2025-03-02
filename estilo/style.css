@@ -47,12 +47,12 @@ nav a:hover, nav.navproduto a:hover{
     cursor: pointer;
     transition-duration: 0.7s;
 }
-nav a.atual, nav a.atual:hover, nav.navproduto a{
+nav a.atual, nav a.atual:hover, nav.navproduto a,nav.navprincipal div p{
     background-color: darkred;
     color: white;
     cursor: default;
 }
-nav.navprincipal div p,nav.navproduto a.atual,nav.navproduto a.atual:hover{
+nav.navproduto a.atual,nav.navproduto a.atual:hover{
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     cursor: default;
@@ -63,7 +63,7 @@ span#burger{
     text-align: center;
     padding: 10px;
     cursor: pointer;
-    border: 1px solid darkred;
+    border: 2px solid darkred;
 }
 span#burger:hover{
     background-color: darkred;
@@ -86,7 +86,7 @@ header img{
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: center;
-        border-top: 3px solid darkred;
+        border-top: 2px solid darkred;
     }
     nav img{
         flex: 1 1 auto;
@@ -225,13 +225,31 @@ div.vid{
     div.vid video{
         height: 100%;
     }
+    p.mensagemHOME{
+        display: none;
+    }
 }
 @media screen and (max-width: 768px){
     div.vid{
-        height: calc(100vh - 100px);
+        height: 50%;
     }
     div.vid video{
         width: 100vw;
+    }
+    p.mensagemHOME{
+        display: block;
+        text-align: center;
+        color: black;
+        background-color: white;
+        width: 90vw;
+        margin: auto;
+        padding: 10px;
+        border-radius: 20px;
+        border: 2px solid darkred;
+    }
+    p.mensagemHOME > span{
+        display: inline;
+        vertical-align: middle;
     }
 }
 
@@ -247,10 +265,6 @@ table thead{
     background-color: darkred;
     color: white;
 }
-/*table col.clinkb1 td{
-    width: 150px;
-    text-align: center;
-}*/
 table th,table td{
     padding: 10px;
     vertical-align: middle;
@@ -264,9 +278,6 @@ table td{
 table tbody>tr:nth-child(2n){
     background-color: lightgray;
 }
-/*table > tbody > tr > td > a{
-    align-self: center;
-}*/
 
 
 footer{
