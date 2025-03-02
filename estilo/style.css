@@ -117,7 +117,6 @@ header img{
         color: darkred;
         background-color: white;
         border-top: 2px solid darkred;
-        border-bottom: 1px solid white;
     }
     nav a.atual::after{
         content: " [Pagina Atual]";
@@ -126,7 +125,7 @@ header img{
     span#burger{
         display: block;
         border-top: 2px solid darkred;
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid white;
     }
     nav img{
         display: none;
