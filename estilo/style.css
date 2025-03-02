@@ -114,6 +114,8 @@ header img{
     }
     nav a{
         display: block;
+        color: darkred;
+        background-color: white;
         border-top: 2px solid darkred;
         border-bottom: 1px solid white;
     }

@@ -11,7 +11,7 @@
 </head>
 <body onresize="mudouTamanho()">
     <header>
-        <menu>
+        <menu onclick="substituirElementos()">
             <img src="imagens/Logo/INPI_Logo_M.jpg" alt="Logo">
             <span id="burger" onclick="clickMenu()">Clique aqui para <strong>abrir/fechar</strong> o menu</span>
         </menu>
@@ -20,7 +20,7 @@
             <div>
                 <a href="home.html">Home</a>
                 <a href="sistema.html">MEGG wOrmhOle System</a>
-                <p href="produto_page1.html" class="atual">Produtos</p>
+                <p href="produto_page1.html" id="prod" class="atual">Produtos</p>
                 <a href="sobre.html">Sobre Nós</a>
                 <a href="parceiros.html">Parceiros & Investidores</a>
                 <a href="fale.html">Fale Conosco</a>
@@ -112,6 +112,14 @@
                 itens.style.display='none'
                 nagsec.style.display='none'
             }
+        }
+
+        function substituirElementos() {
+            const prod = document.getElementById("prod");
+            const nagsec = document.getElementById("nagsec");
+            prod.innerHTML = nagsec.innerHTML;
+            prod.className = nagsec.className;
+            nagsec.style.display = 'none';
         }
     </script>
 </body>
