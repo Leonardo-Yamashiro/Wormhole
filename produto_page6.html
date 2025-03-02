@@ -67,11 +67,13 @@
         }
 
         function substituirElementos() {
-            const prod = document.getElementById("prod");
-            const nagsec = document.getElementById("nagsec");
-            prod.innerHTML = nagsec.innerHTML;
-            prod.className = nagsec.className;
-            nagsec.style.display = 'none';
+            if(window.innerWidth<=768){
+                const prod = document.getElementById("prod");
+                const nagsec = document.getElementById("nagsec");
+                prod.innerHTML = nagsec.innerHTML;
+                prod.className = nagsec.className;
+                nagsec.style.display = 'none';
+            }
         }
     </script>
 </body>
