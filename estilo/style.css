@@ -209,6 +209,7 @@ iframe{
     height: 100%;
     border: 2px solid darkred;
     overflow-x: auto;
+    overflow-y: auto;
     background-color: white;
 }
 div.vid{
