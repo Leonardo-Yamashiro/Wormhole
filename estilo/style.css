@@ -34,7 +34,7 @@ nav{
     text-align: center;
     align-items: center;
 }
-nav a,nav.navprincipal div p{
+nav a,nav p{
     font-weight: bold;
     text-decoration: none;
     color: darkred;
@@ -63,7 +63,6 @@ span#burger{
     text-align: center;
     padding: 10px;
     cursor: pointer;
-    border: 2px solid darkred;
 }
 span#burger:hover{
     background-color: darkred;
@@ -115,10 +114,17 @@ header img{
     }
     nav a{
         display: block;
-        border: 1px solid darkred;
+        border-top: 2px solid darkred;
+        border-bottom: 1px solid white;
+    }
+    nav a.atual::after{
+        content: " [Pagina Atual]";
+        font-size: 0.7em;
     }
     span#burger{
         display: block;
+        border-top: 2px solid darkred;
+        border-bottom: 1px solid white;
     }
     nav img{
         display: none;
