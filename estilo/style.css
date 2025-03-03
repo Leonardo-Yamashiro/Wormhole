@@ -99,7 +99,7 @@ header img{
         align-items: center;
     }
     nav.navprincipal div a,nav.navprincipal div p{
-        flex: 0 1 250px;
+        flex: 1 1 auto;
     }
     nav.navproduto>a{
         flex: 1 1 auto;
