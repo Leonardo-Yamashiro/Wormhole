@@ -286,6 +286,9 @@ table td{
 table tbody>tr:nth-child(2n){
     background-color: lightgray;
 }
+table col.clink,table col.cutil,table col.cdese{
+    width: 100px;
+}
 
 
 footer{
