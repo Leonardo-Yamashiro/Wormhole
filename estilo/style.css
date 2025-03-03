@@ -263,6 +263,7 @@ div.vid{
 
 
 table{
+    min-width: 340px;
     width: 95%;
     margin: auto;
     background-color: white;
