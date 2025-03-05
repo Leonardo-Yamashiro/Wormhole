@@ -264,11 +264,13 @@ div.vid{
 
 table{
     min-width: 340px;
-    width: 95%;
+    width: 90%;
     margin: auto;
     background-color: white;
     border: 2px solid darkred;
     border-collapse: collapse;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 table thead{
     background-color: darkred;
@@ -288,7 +290,7 @@ table tbody>tr:nth-child(2n){
     background-color: lightgray;
 }
 table col.clink,table col.cutil,table col.cdese{
-    width: 100px;
+    min-width: 50px;
 }
 
 
