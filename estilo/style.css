@@ -290,7 +290,7 @@ table tbody>tr:nth-child(2n){
     background-color: lightgray;
 }
 table col.clink,table col.cutil,table col.cdese{
-    min-width: 50px;
+    max-width: 100px;
 }
 
 
