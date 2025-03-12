@@ -7,13 +7,12 @@
     <link rel="shortcut icon" href="imagens/Processamento_1/IMP_Logo B_1.jpg" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css" media="screen">
     <link rel="stylesheet" href="estilo/print.css" media="print">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body onresize="mudouTamanho()">
     <header>
         <menu onclick="substituirElementos()">
             <img src="imagens/Logo/INPI_Logo_M.jpg" alt="Logo">
-            <span id="burger" onclick="clickMenu();substituir()">Clique aqui para <strong>abrir/fechar</strong> o menu</span>
+            <span id="burger" onclick="clickMenu()" onmouseenter="change()" onmouseleave="changeback()">clique aqui para <strong>abrir/fechar</strong> o menu</span>
         </menu>
         <nav id="itens" class="navprincipal">
             <img src="imagens/Logo/INPI_Logo_M.jpg" alt="Logo">
@@ -74,6 +73,14 @@
                 prod.className = nagsec.className;
                 nagsec.style.display = 'none';
             }
+        }
+        function change(){
+            burger.style.color='white'
+            burger.style.background='darkred'
+        }
+        function changeback(){
+            burger.style.color='darkred'
+            burger.style.background='white'
         }
     </script>
 </body>
