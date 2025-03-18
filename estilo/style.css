@@ -112,6 +112,12 @@ header img{
     }
 }
 @media screen and (max-width: 768px){
+    header{
+        position: static;
+    }
+    header.header0{
+        display: none;
+    }
     nav{
         display: none;
     }
