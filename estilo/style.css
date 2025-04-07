@@ -56,7 +56,7 @@ nav a.atual, nav a.atual:hover, nav.navproduto a,nav.navprincipal div p{
     cursor: default;
 }
 nav.navproduto a.atual,nav.navproduto a.atual:hover{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: red;
     color: white;
     cursor: default;
 }
