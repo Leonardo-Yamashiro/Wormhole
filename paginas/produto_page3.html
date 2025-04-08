@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wOrmhOle/Produtos/Esquadrilhas</title>
+    <title>wOrmhOle/Produtos/Caixas</title>
     <link rel="shortcut icon" href="imagens/Logo/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css" media="screen">
     <link rel="stylesheet" href="estilo/print.css" media="print">
@@ -17,7 +17,7 @@
         <nav id="itens" class="navprincipal">
             <img src="imagens/Logo/logo.png" alt="Logo">
             <div>
-                <a href="home.html">Home</a>
+                <a href="../home.html">Home</a>
                 <a href="sistema.html">MEGG wOrmhOle System</a>
                 <p href="produto_page1.html" id="prod" class="atual">Produtos</p>
                 <a href="sobre.html">Sobre Nós</a>
@@ -27,8 +27,8 @@
         </nav>
         <nav id="nagsec" class="navproduto">
             <a href="produto_page1.html">Blocos</a>
-            <a href="produto_page2.html" class="atual">Esquadrilhas</a>
-            <a href="produto_page3.html">Caixas</a>
+            <a href="produto_page2.html">Esquadrilhas</a>
+            <a href="produto_page3.html" class="atual">Caixas</a>
             <a href="produto_page4.html">Material Aderente</a>
             <a href="produto_page5.html">Dispositivos</a>
             <a href="produto_page6.html">Equipamento</a>
@@ -55,41 +55,43 @@
 
 
         <h1>Características Principais</h1>
-        <p>Esta versão incial das Esquadrias wOrmhOle compreende:</p>
+        <p>Esta versão incial das Caixas wOrmhOle compreende:</p>
         <ul>
-            <li>Esquadria com acabamento final de fábrica;</li>
+            <li>Caixas e qualquer outro objeto modular neste formato, incluindo Quadro, a ser embutido na parede;</li>
             <li>Dimensões modulares reais com tolerâncias dimensionais e geométricas menores do que 1 mm;</li>
             <li>Pré-montagem sem encaixe, apenas por sobreposição e justaposição;</li>
-            <li>Chumbamento em lote junto com os blocos, por injeção de material aderente;</li>
+            <li>Chumbamento em lote junto com a parede de blocos.</li>
+
         </ul>
-
-
         <h1>Materiais</h1>
         <ol>
-            <li>Esquadria de Alumínio;</li>
-            <li>Esquadria de Madeira;</li>
-            <li>Esquadria de Vidro;</li>
-            <li>Esquadria de PVC e outros compósitos;</li>
-            <li>Esquadria de Aço carbono;</li>
-            <li>Esquadria de Aço inox;</li>
-            <li>Esquadria de Ferro forjado.</li>
+            <li>Caixas de Alumínio;</li>
+            <li>Caixas de Madeira;</li>
+            <li>Caixas de Vidro;</li>
+            <li>Caixas de PVC e outros compósitos;</li>
+            <li>Caixas de Aço carbono;</li>
+            <li>Caixas de Aço inox;</li>
+            <li>Caixas de Ferro forjado;</li>
+            <li>Caixas de Outros materiais.</li>
         </ol>
 
 
-        <h1>Grupos de Esquadrias wOrmhOle</h1>
-        <h3>P: Portas</h3>
-        <h3>J: Janelas</h3>
+        <h1>Grupos de Caixas wOrmhOle</h1>
+        <h3>E: Caixa de disjuntores e outras caixas Elétricas</h3>
+        <h3>H: Caixa para Hidrômetro</h3>
+        <h3>N: Nichos para banheiros ou para outras finalidades</h3>
 
 
         <h1>Códigos de Identificação</h1>
-        <p>Estrutura genérica:<strong> MEEG-XY-Z...</strong></p>
+        <p>Estrutura genérica: <strong>MEEG-XY-Z...</strong></p>
         <p>Onde:</p>
-        <ol>
+        <ul>
             <li>MEGG = Modular Elements Grouted in Group (Elementos Modulares Grauteados em Grupo).</li>
-            <li>X = “E” para Esquadrias.</li>
-            <li>Y = “1... 7” para Esquadrias conforme material definido no item 2.</li>
-            <li>Z = “P”, “J” conforme grupos de Esquadrias definidas no item 3.</li>
-        </ol>
+            <li>X = “C” para Caixas e similares.</li>
+            <li>Y = “1... 9” para Caixas conforme material definido no item 2.</li>
+            <li>Z = “E”, “N”, “N” conforme grupos de Caixas definidas no item 3.</li>
+            
+        </ul>
     </main>
 
     <script>
@@ -127,6 +129,7 @@
                 nagsec.style.display = 'none';
             }
         }
+        
         function change(){
             burger.style.color='white'
             burger.style.background='darkred'
