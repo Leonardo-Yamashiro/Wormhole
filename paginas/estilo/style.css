@@ -24,14 +24,14 @@ header{
     width: 100%;
     top: 0;
     z-index: 1;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.334);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.229);
     overflow-x: auto;
 }
 header.header0{
     position: static;
 }
 nav{
-    min-height: 50px;
+    min-height: 30px;
     margin: auto;
     line-height: 50px;
     text-align: center;
@@ -50,12 +50,12 @@ nav a:hover, nav.navproduto a:hover{
     cursor: pointer;
     transition-duration: 0.7s;
 }
-nav a.atual, nav a.atual:hover, nav.navproduto a,nav.navprincipal div p{
+nav a.atual, nav a.atual:hover, nav.navproduto a, nav.navprincipal div p{
     background-color: darkred;
     color: white;
     cursor: default;
 }
-nav.navproduto a.atual,nav.navproduto a.atual:hover{
+nav.navproduto a.atual, nav.navproduto a.atual:hover{
     background-color: red;
     color: white;
     cursor: default;
@@ -76,6 +76,7 @@ header img{
     max-width: 50px;
     vertical-align: middle;
 }
+
 @media screen and (min-width: 769px){
     nav.navprincipal{
         display: flex;
@@ -87,8 +88,10 @@ header img{
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
-        align-items: center;
-        border-top: 2px solid darkred;
+        align-items: flex-start;
+        border: 2px solid darkred;
+        height: 40px;
+        line-height: 30px;
     }
     nav img{
         flex: 1 1 auto;
@@ -125,7 +128,7 @@ header img{
         display: block;
         color: darkred;
         background-color: white;
-        border-top: 2px solid darkred;
+        border-bottom: 2px solid darkred;
     }
     nav a.atual::after{
         content: " [Pagina Atual]";
@@ -133,8 +136,7 @@ header img{
     }
     span#burger{
         display: block;
-        border-top: 2px solid darkred;
-        border-bottom: 2px solid white;
+        border: 2px solid darkred;
     }
     nav img{
         display: none;
