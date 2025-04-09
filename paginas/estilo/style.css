@@ -44,19 +44,14 @@ nav a,nav p{
     padding: 5px;
     vertical-align: middle;
 }
-nav a:hover, nav.navproduto a:hover{
+nav a:hover{
     background-color: red;
     color: white;
     cursor: pointer;
     transition-duration: 0.7s;
 }
-nav a.atual, nav a.atual:hover, nav.navproduto a, nav.navprincipal div p{
+nav a.atual, nav a.atual:hover{
     background-color: darkred;
-    color: white;
-    cursor: default;
-}
-nav.navproduto a.atual, nav.navproduto a.atual:hover{
-    background-color: red;
     color: white;
     cursor: default;
 }
@@ -92,9 +87,13 @@ header img{
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: flex-start;
-        border: 2px solid darkred;
+        border-top: 2px solid darkred;
         height: 40px;
         line-height: 30px;
+    }
+    
+    nav.navproduto a.atual{
+        background-color: rgba(139, 0, 0, 0.8);
     }
     nav img{
         flex: 1 1 auto;
