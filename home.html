@@ -23,13 +23,21 @@
         <nav id="itens" class="navprincipal">
             <img src="paginas/imagens/Logo/logo.png" alt="Logo">
             <div>
-                <a href="home.html" class="atual">Home</a>
+                <a href="home.html" id="prod" class="atual">Home</a>
                 <a href="paginas/sistema.html">MEGG wOrmhOle System</a>
                 <a href="paginas/produto_page1.html">Produtos</a>
                 <a href="paginas/sobre.html">Sobre Nós</a>
                 <a href="paginas/parceiros.html">Parceiros & Investidores</a>
                 <a href="paginas/fale.html">Fale Conosco</a>
             </div>
+        </nav>
+        <nav id="nagsec" class="navproduto">
+            <a href="home.html" class="atual">Video</a>
+            <a href="paginas/sistema.html">MEGG wOrmhOle System</a>
+            <a href="#">Diferenciais</a>
+            <a href="#">Processo de Montagem</a>
+            <a href="#">Solução dos Problemas</a>
+            <a href="#">Valor Agregado</a>
         </nav>
     </header>
     <header class="header0"><img src="paginas/imagens/Logo/logo.png" alt="Logo"></header>
@@ -61,6 +69,17 @@
                 itens.style.display='none'
             }
         }
+
+        function substituirElementos() {
+            if(window.innerWidth<=768){
+                const prod = document.getElementById("prod");
+                const nagsec = document.getElementById("nagsec");
+                prod.innerHTML = nagsec.innerHTML;
+                prod.className = nagsec.className;
+                nagsec.style.display = 'none';
+            }
+        }
+        
         function change(){
             burger.style.color='white'
             burger.style.background='darkred'
