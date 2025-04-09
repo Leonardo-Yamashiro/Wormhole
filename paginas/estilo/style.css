@@ -132,7 +132,12 @@ header img{
         display: block;
         color: darkred;
         background-color: white;
-        border-bottom: 2px solid darkred;
+        border: 2px solid darkred;
+        border-top: 0px;
+    }
+    nav a#prod{
+        border: 2px solid darkred;
+        padding: 0px;
     }
     nav a.atual::after{
         content: " [Pagina Atual]";
