@@ -10,7 +10,7 @@
 </head>
 <body onresize="mudouTamanho()">
     <header>
-        <menu>
+        <menu onclick="substituirElementos()">
             <img src="imagens/Logo/logo.png" alt="Logo">
             <span id="burger" onclick="clickMenu()" onmouseenter="change()" onmouseleave="changeback()">clique aqui para <strong>abrir/fechar</strong> o menu</span>
         </menu>
@@ -21,12 +21,24 @@
                 <a href="sistema.html">MEGG wOrmhOle System</a>
                 <a href="produto_page1.html">Produtos</a>
                 <a href="sobre.html">Sobre Nós</a>
-                <a href="parceiros.html" class="atual">Parceiros & Investidores</a>
+                <a href="parceiros.html" id="prod" class="atual">Parceiros & Investidores</a>
                 <a href="fale.html">Fale Conosco</a>
             </div>
         </nav>
+        <nav id="nagsec" class="navproduto">
+            <a href="#">Pedidos de Patente</a>
+            <a href="#">Pitch Deck</a>
+            <a href="#">One Pager</a>
+            <a href="#">Video de MVP</a>
+            <a href="#">TRL</a>
+            <a href="#">Valoração</a>
+        </nav>
     </header>
-    <header class="header0"><img src="imagens/Logo/logo.png" alt="Logo"></header>
+    <header class="header0">
+        <img src="imagens/Logo/logo.png" alt="Logo">
+        <nav id="nagsec" class="navproduto">
+        </nav>
+    </header>
     
     <main>
         <ul>
@@ -62,6 +74,16 @@
             }
             else{
                 itens.style.display='none'
+            }
+        }
+
+        function substituirElementos() {
+            if(window.innerWidth<=768){
+                const prod = document.getElementById("prod");
+                const nagsec = document.getElementById("nagsec");
+                prod.innerHTML = nagsec.innerHTML;
+                prod.className = nagsec.className;
+                nagsec.style.display = 'none';
             }
         }
         function change(){

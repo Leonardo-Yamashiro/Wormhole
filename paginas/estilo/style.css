@@ -78,6 +78,9 @@ header img{
 }
 
 @media screen and (min-width: 769px){
+    header{
+        overflow-y: hidden;
+    }
     nav.navprincipal{
         display: flex;
         flex-flow: row nowrap;
@@ -117,6 +120,7 @@ header img{
 @media screen and (max-width: 768px){
     header{
         position: static;
+        overflow-y: auto;
     }
     header.header0{
         display: none;
@@ -239,7 +243,7 @@ div.vid{
 }
 @media screen and (min-width: 769px){
     div.vid{
-        height: calc(100vh - 60px);
+        height: calc(100vh - 80px);
     }
     div.vid video{
         height: 100%;
