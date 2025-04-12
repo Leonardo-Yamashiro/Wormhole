@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGG wOrmhOle/Fale Conosco</title>
+    <link rel="shortcut icon" href="imagens/Logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css" media="screen">
+    <link rel="stylesheet" href="estilo/print.css" media="print">
+</head>
+<body onresize="mudouTamanho()" onload="navarrumado()">
+    <header>
+        <menu onclick="substituirElementos()">
+            <img src="imagens/Logo/logo.png" alt="Logo">
+            <span id="burger" onclick="clickMenu()" onmouseenter="change()" onmouseleave="changeback()">clique aqui para <strong>abrir/fechar</strong> o menu</span>
+        </menu>
+        <nav id="itens" class="navprincipal">
+            <img src="imagens/Logo/logo.png" alt="Logo">
+            <div>
+                <p onclick="navA1()">Home &#9776;</p>
+                <p onclick="navA2()">Produtos &#9776;</p>
+                <p onclick="navA3()">Docs para Investidores &#9776;</p>
+                <a href="sobre.html">Sobre Nós</a>
+                <a href="fale.html">Fale Conosco</a>
+            </div>
+        </nav>
+        <nav class="navbar" id="navproduto">
+            <a href="produto_page1.html">Blocos</a>
+            <a href="produto_page2.html">Esquadrilhas</a>
+            <a href="produto_page3.html">Caixas</a>
+            <a href="produto_page4.html">Material Aderente</a>
+            <a href="produto_page5.html">Dispositivos</a>
+            <a href="produto_page6.html">Equipamentos</a>
+        </nav>
+        <nav class="navbar" id="navhome">
+            <a href="../home.html">Vídeo</a>
+            <a href="sistema.html">MEGG wOrmhOle System</a>
+            <a href="diferenciais.html">Diferenciais</a>
+            <a href="processos.html">Processo de Montagem</a>
+            <a href="solucaoproblemas.html">Solução dos Problemas</a>
+            <a href="valor.html">Valor Agregado</a>
+            <a href="solucoes.html">Soluções de Montagem</a>
+        </nav>
+        <nav class="navbar" id="navparceiros">
+            <a href="parceiros.html">Pedidos de Patente</a>
+            <a href="pitchdeck.html">Pitch Deck</a>
+            <a href="onepager.html">One Pager</a>
+            <a href="videomvp.html">Video de MVP</a>
+            <a href="trl.html">TRL</a>
+            <a href="valoracao.html">Valoração</a>
+        </nav>
+    </header>
+    <header class="header0">
+        <img src="imagens/Logo/logo.png" alt="Logo">
+    </header>
+    
+ 
+    <main>
+        <p><strong>Email:</strong> meggwormhole@gmail.com.br</p>
+        <p><strong>Whatsapp:</strong> +55 12 98108-4911</p>
+    </main>
+
+
+    <script>
+        function navarrumado(){
+            navhome.style.display='none'
+            navproduto.style.display='none'
+            navparceiros.style.display='none'
+        }
+        function navA1(){
+            if(navhome.style.display=='none'){
+                navhome.style.display='flex'
+                navproduto.style.display='none'
+                navparceiros.style.display='none'
+            }
+            else{
+                navhome.style.display='none'
+                navproduto.style.display='none'
+                navparceiros.style.display='none'
+            }
+        }
+        function navA2(){
+            if(navproduto.style.display=='none'){
+                navproduto.style.display='flex'
+                navhome.style.display='none'
+                navparceiros.style.display='none'
+            }
+            else{
+                navhome.style.display='none'
+                navproduto.style.display='none'
+                navparceiros.style.display='none'
+            }
+        }
+        function navA3(){
+            if(navparceiros.style.display=='none'){
+                navparceiros.style.display='flex'
+                navhome.style.display='none'
+                navproduto.style.display='none'
+            }
+            else{
+                navhome.style.display='none'
+                navproduto.style.display='none'
+                navparceiros.style.display='none'
+            }
+        }
+        
+        function clickMenu(){
+            if(itens.style.display=='block'){
+                itens.style.display='none'
+                burger.style.backgroundColor='white'
+                burger.style.color='darkred'
+            }
+            else{
+                itens.style.display='block'
+                burger.style.backgroundColor='darkred'
+                burger.style.color='white'
+            }
+        }
+        function mudouTamanho(){
+            if(window.innerWidth>=769){
+                itens.style.display='flex'
+            }
+            else{
+                itens.style.display='none'
+            }
+        }
+        function change(){
+            burger.style.color='white'
+            burger.style.background='darkred'
+        }
+        function changeback(){
+            burger.style.color='darkred'
+            burger.style.background='white'
+        }
+    </script>
+</body>
+</html>
