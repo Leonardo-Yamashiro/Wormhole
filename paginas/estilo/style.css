@@ -55,9 +55,6 @@ nav a.atual, nav a.atual:hover, nav p.atual, nav p.atual:hover{
     color: white;
     cursor: default;
 }
-nav p::after{
-    content: "";
-}
 span#burger{
     color: darkred;
     display: block;
