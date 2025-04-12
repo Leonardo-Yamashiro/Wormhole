@@ -88,7 +88,7 @@ header img{
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: center;
-        border: 2px solid darkred;
+        border-top: 2px solid darkred;
         width: 100%;
         background-color: white;
     }
@@ -128,7 +128,7 @@ header img{
     nav{
         display: none;
     }
-    nav a{
+    nav a, nav p{
         display: block;
         color: darkred;
         background-color: white;
