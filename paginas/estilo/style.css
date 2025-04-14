@@ -180,7 +180,11 @@ main{
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 20px;
-    margin-top: 50px;
+}
+@media screen and (min-width: 769px){
+    main{
+        margin-top: 50px;
+    }
 }
 main h1{
     color: darkred;
@@ -262,7 +266,8 @@ div.vid{
 }
 @media screen and (min-width: 769px){
     div.vid{
-        height: calc(100% - 50px);
+        margin-top: 50px;
+        height: calc(100% - 100px);
     }
     div.vid video{
         height: 100%;
