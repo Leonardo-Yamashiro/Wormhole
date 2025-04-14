@@ -62,20 +62,14 @@
 
     <script>
         function navarrumado(){
-            if(window.innerWidth>=769){
-                navproduto.style.display='flex'
-            }
+            navhome.style.display='none'
+            navparceiros.style.display='none'
         }
         function navA1(){
             if(window.innerWidth>=769){
                 if(navhome.style.display=='none'){
                     navhome.style.display='flex'
                     navproduto.style.display='none'
-                    navparceiros.style.display='none'
-                }
-                else{
-                    navhome.style.display='none'
-                    navproduto.style.display='flex'
                     navparceiros.style.display='none'
                 }
             }
@@ -109,11 +103,6 @@
                     navparceiros.style.display='flex'
                     navhome.style.display='none'
                     navproduto.style.display='none'
-                }
-                else{
-                    navhome.style.display='none'
-                    navproduto.style.display='flex'
-                    navparceiros.style.display='none'
                 }
             }
             else{
