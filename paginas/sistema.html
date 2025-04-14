@@ -12,7 +12,7 @@
     <header>
         <menu onclick="substituirElementos()">
             <img src="imagens/Logo/logo.png" alt="Logo">
-            <span id="burger" onclick="clickMenu()">clique aqui para <strong>abrir/fechar</strong> o menu</span>
+            <span id="burger" onclick="clickMenu()">Menu</span>
         </menu>
         <nav id="itens" class="navprincipal">
             <img src="imagens/Logo/logo.png" alt="Logo">
@@ -80,9 +80,9 @@
 
     <script>
         function navarrumado(){
-            navhome.style.display='none'
-            navproduto.style.display='none'
-            navparceiros.style.display='none'
+            if(window.innerWidth>=769){
+                    navhome.style.display='flex'
+            }
         }
         function navA1(){
             if(window.innerWidth>=769){
@@ -92,7 +92,7 @@
                     navparceiros.style.display='none'
                 }
                 else{
-                    navhome.style.display='none'
+                    navhome.style.display='flex'
                     navproduto.style.display='none'
                     navparceiros.style.display='none'
                 }
@@ -102,6 +102,7 @@
                 navhome.style.display='flex'
                 navproduto.style.display='none'
                 navparceiros.style.display='none'
+                burger.innerText='< Home'
             }
         }
         function navA2(){
@@ -112,7 +113,7 @@
                     navparceiros.style.display='none'
                 }
                 else{
-                    navhome.style.display='none'
+                    navhome.style.display='flex'
                     navproduto.style.display='none'
                     navparceiros.style.display='none'
                 }
@@ -122,6 +123,7 @@
                 navproduto.style.display='flex'
                 navhome.style.display='none'
                 navparceiros.style.display='none'
+                burger.innerText='< Produtos'
             }
         }
         function navA3(){
@@ -132,7 +134,7 @@
                     navproduto.style.display='none'
                 }
                 else{
-                    navhome.style.display='none'
+                    navhome.style.display='flex'
                     navproduto.style.display='none'
                     navparceiros.style.display='none'
                 }
@@ -142,6 +144,7 @@
                 navparceiros.style.display='flex'
                 navhome.style.display='none'
                 navproduto.style.display='none'
+                burger.innerText='< Documentos'
             }
         }
         
@@ -151,12 +154,14 @@
                 navhome.style.display='none'
                 navproduto.style.display='none'
                 navparceiros.style.display='none'
+                burger.innerText='Menu'
             }
             else{
                 itens.style.display='block'
                 navhome.style.display='none'
                 navproduto.style.display='none'
                 navparceiros.style.display='none'
+                burger.innerText='Menu'
             }
         }
         function mudouTamanho(){
