@@ -23,9 +23,9 @@
         <nav id="itens" class="navprincipal">
             <img src="paginas/imagens/Logo/logo.png" alt="Logo">
             <div>
-                <p onclick="navA1()" class="atual">Home &#9776;</p>
-                <p onclick="navA2()">Produtos &#9776;</p>
-                <p onclick="navA3()">Docs para Investidores &#9776;</p>
+                <p onclick="navA1()" id="navA" class="atual">Home &#9776;</p>
+                <p onclick="navA2()" id="navB">Produtos &#9776;</p>
+                <p onclick="navA3()" id="navC">Docs para Investidores &#9776;</p>
                 <a href="paginas/sobre.html">Sobre Nós</a>
                 <a href="paginas/fale.html">Fale Conosco</a>
             </div>
@@ -78,6 +78,13 @@
                         navhome.style.display='flex'
                         navproduto.style.display='none'
                         navparceiros.style.display='none'
+
+                        navA.style.background='red'
+                        navA.style.color='white'
+                        navB.style.background='white'
+                        navB.style.color='darkred'
+                        navC.style.background='white'
+                        navC.style.color='darkred'
                     }
                 }
                 else{
@@ -94,6 +101,13 @@
                         navproduto.style.display='flex'
                         navhome.style.display='none'
                         navparceiros.style.display='none'
+
+                        navA.style.background='white'
+                        navA.style.color='darkred'
+                        navB.style.background='red'
+                        navB.style.color='white'
+                        navC.style.background='white'
+                        navC.style.color='darkred'
                     }
                 }
                 else{
@@ -110,6 +124,13 @@
                         navparceiros.style.display='flex'
                         navhome.style.display='none'
                         navproduto.style.display='none'
+
+                        navA.style.background='white'
+                        navA.style.color='darkred'
+                        navB.style.background='white'
+                        navB.style.color='darkred'
+                        navC.style.background='red'
+                        navC.style.color='white'
                     }
                 }
                 else{

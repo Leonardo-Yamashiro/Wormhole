@@ -92,7 +92,7 @@ header img{
         align-items: center;
         border-top: 2px solid darkred;
         width: 100%;
-        background-color: lightgray;
+        background-color: white;
     }
     nav.navbar a{
         flex: 1 1 auto;
