@@ -62,10 +62,17 @@
 
 
     <script>
-        function navarrumado(){
-            navproduto.style.display='none'
-            navhome.style.display='none'
-        }
+            function navarrumado(){
+                if(window.innerWidth>=769){
+                    navproduto.style.display='none'
+                    navhome.style.display='none'
+                }
+                else{
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    navhome.style.display='none'
+                }
+            }
             function navA1(){
                 if(window.innerWidth>=769){
                     if(navhome.style.display=='none'){
@@ -156,9 +163,17 @@
         function mudouTamanho(){
             if(window.innerWidth>=769){
                 itens.style.display='flex'
-                navhome.style.display='none'
                 navproduto.style.display='none'
                 navparceiros.style.display='none'
+                
+                navhome.style.display='flex'
+
+                navA.style.background='red'
+                navA.style.color='white'
+                navB.style.background=''
+                navB.style.color=''
+                navC.style.background=''
+                navC.style.color=''
             }
             else{
                 itens.style.display='none'
