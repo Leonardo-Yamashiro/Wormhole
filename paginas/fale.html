@@ -17,7 +17,7 @@
         <nav id="itens" class="navprincipal">
             <img src="imagens/Logo/logo.png" alt="Logo">
             <div>
-                <p onclick="navA1()" id="navA" class="atual">Home &#9776;</p>
+                <p onclick="navA1()" id="navA">Home &#9776;</p>
                 <p onclick="navA2()" id="navB">Produtos &#9776;</p>
                 <p onclick="navA3()" id="navC">Docs para Investidores &#9776;</p>
                 <a href="sobre.html">Sobre Nós</a>
@@ -66,6 +66,8 @@
         function navarrumado(){
             navproduto.style.display='none'
             navparceiros.style.display='none'
+            navA.style.background='red'
+            navA.style.color='white'
         }
         
         function navA1(){
@@ -77,10 +79,10 @@
 
                         navA.style.background='red'
                         navA.style.color='white'
-                        navB.style.background='white'
-                        navB.style.color='darkred'
-                        navC.style.background='white'
-                        navC.style.color='darkred'
+                        navB.style.background=''
+                        navB.style.color=''
+                        navC.style.background=''
+                        navC.style.color=''
                     }
                 }
                 else{
@@ -98,12 +100,12 @@
                         navhome.style.display='none'
                         navparceiros.style.display='none'
 
-                        navA.style.background='white'
-                        navA.style.color='darkred'
+                        navA.style.background=''
+                        navA.style.color=''
                         navB.style.background='red'
                         navB.style.color='white'
-                        navC.style.background='white'
-                        navC.style.color='darkred'
+                        navC.style.background=''
+                        navC.style.color=''
                     }
                 }
                 else{
@@ -121,10 +123,10 @@
                         navhome.style.display='none'
                         navproduto.style.display='none'
 
-                        navA.style.background='white'
-                        navA.style.color='darkred'
-                        navB.style.background='white'
-                        navB.style.color='darkred'
+                        navA.style.background=''
+                        navA.style.color=''
+                        navB.style.background=''
+                        navB.style.color=''
                         navC.style.background='red'
                         navC.style.color='white'
                     }
