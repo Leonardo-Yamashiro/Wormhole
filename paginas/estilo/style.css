@@ -269,17 +269,14 @@ div.vid{
 }
 div.mvp{
     margin: auto;
-    height: 100%;
-    width: 100%;
-    background-color: darkred;
-    margin: auto;
+    height: calc(100% - 50px);
+    background-image: linear-gradient(to top, darkred, transparent);
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
 }
 div.mvp video{
-    margin: auto;
     height: 100%;
 }
 
