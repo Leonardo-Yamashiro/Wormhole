@@ -274,9 +274,15 @@ div.mvp{
     height: 100%;
     width: 100%;
     background-color: darkred;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 div.mvp video{
-    width: 100%;
+    margin: auto;
+    height: 100%;
 }
 
 

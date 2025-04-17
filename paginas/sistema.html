@@ -35,7 +35,7 @@
         <nav class="navbar" id="navhome">
             <a href="../home.html">Vídeo MEGG wOrmhOle</a>
             <a href="#" class="atual">MEGG wOrmhOle System</a>
-            <a href="diferenciais.html">Diferenciais</a>
+            <a href="diferenciais.html" class="atual">Diferenciais</a>
             <a href="processos.html">Processo de Montagem</a>
             <a href="solucaoproblemas.html">Solução dos Problemas</a>
             <a href="valor.html">Valor Agregado</a>
@@ -86,22 +86,17 @@
            <li> Parede e fachada com vida útil de 100 anos (ainda necessita de investimento em
             testes comprobatórios);</li>
         </ol>
+
+        
     </main>
 
     <script>
         
         function navarrumado(){
-                if(window.innerWidth>=769){
-                    navproduto.style.display='none'
-                    navparceiros.style.display='none'
-                    navA.style.background='darkred'
-                    navA.style.color='white'
-                }
-                else{
                     navproduto.style.display='none'
                     navparceiros.style.display='none'
                     navhome.style.display='none'
-                }
+                
             }
             function navA1(){
                 if(window.innerWidth>=769){
@@ -116,6 +111,12 @@
                         navB.style.color = '';
                         navC.style.background = '';
                         navC.style.color = '';
+                    }
+                    else{
+                        
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    navhome.style.display='none'
                     }
                 }
                 else{
@@ -140,6 +141,12 @@
                         navC.style.background=''
                         navC.style.color=''
                     }
+                    else{
+                        
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    navhome.style.display='none'
+                    }
                 }
                 else{
                     itens.style.display='none'
@@ -162,6 +169,12 @@
                         navB.style.color=''
                         navC.style.background='darkred'
                         navC.style.color='white'
+                    }
+                    else{
+                        
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    navhome.style.display='none'
                     }
                 }
                 else{
