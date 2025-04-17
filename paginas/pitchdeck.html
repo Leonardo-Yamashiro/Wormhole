@@ -56,8 +56,8 @@
     
  
     <main>
-        <h1>Pitch Deck</h1>
-        <a href="pdf/investidores/_Pitch deck worm PDF.pdf" target="_blank">Pitch Deck</a>
+        <h1>Pitch Deck do MEGG wOrmhOle System</h1>
+        <a href="pdf/investidores/_Pitch deck worm PDF.pdf" rel="nofollow">Pitch Deck</a>
     </main>
 
 
@@ -73,21 +73,19 @@
                     navhome.style.display='none'
                 }
             }
-        
-        
-        function navA1(){
+            function navA1(){
                 if(window.innerWidth>=769){
                     if(navhome.style.display=='none'){
                         navhome.style.display='flex'
                         navproduto.style.display='none'
                         navparceiros.style.display='none'
 
-                        navA.style.background='red'
+                        navA.style.background='darkred'
                         navA.style.color='white'
-                        navB.style.background=''
-                        navB.style.color=''
-                        navC.style.background=''
-                        navC.style.color=''
+                        navB.style.background = '';
+                        navB.style.color = '';
+                        navC.style.background = '';
+                        navC.style.color = '';
                     }
                 }
                 else{
@@ -107,7 +105,7 @@
 
                         navA.style.background=''
                         navA.style.color=''
-                        navB.style.background='red'
+                        navB.style.background='darkred'
                         navB.style.color='white'
                         navC.style.background=''
                         navC.style.color=''
@@ -132,7 +130,7 @@
                         navA.style.color=''
                         navB.style.background=''
                         navB.style.color=''
-                        navC.style.background='red'
+                        navC.style.background='darkred'
                         navC.style.color='white'
                     }
                 }
@@ -144,46 +142,45 @@
                     burger.innerText='< Documentos'
                 }
             }
-        
-        function clickMenu(){
-            if(itens.style.display=='block'){
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
-
+            
+            function clickMenu(){
+                if(itens.style.display=='block'){
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
+                else{
+                    itens.style.display='block'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
             }
-            else{
-                itens.style.display='block'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
-            }
-        }
-        function mudouTamanho(){
-            if(window.innerWidth>=769){
+            function mudouTamanho(){
+                if(window.innerWidth>=769){
                 itens.style.display='flex'
                 navproduto.style.display='none'
                 navparceiros.style.display='none'
                 
                 navhome.style.display='flex'
 
-                navA.style.background='red'
+                navA.style.background='darkred'
                 navA.style.color='white'
                 navB.style.background=''
                 navB.style.color=''
                 navC.style.background=''
                 navC.style.color=''
             }
-            else{
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
+                else{
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 </html>

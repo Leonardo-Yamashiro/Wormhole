@@ -57,7 +57,10 @@
 
     <main>
         <h1>Sobre Nós</h1>
-        <p>A wOrmhOle é uma construtech brasileira que está estruturada para atuar em todas as regiões do país através do sistema de franquia e/ou licenciamento. Inicialmente a empresa é composta por 2 sócios, 1 engenheiro mecânico e 1 engenheiro de computação do 4º ano.</p>
+        <p>A wOrmhOle é uma construtech brasileira que está estruturada se estruturando para atuar em todas as regiões do país através do sistema de franquia e/ou licenciamento. </p>
+        <p>Estamos à procura de sócios investidores que estejam interessados em investir financeiramente e administrativamente no negócio, agregando conhecimento, experiência, rede de relacionamentos, etc.</p>
+        <p>Inicialmente a empresa é composta por 2 sócios, 1 engenheiro mecânico e 1 engenheiro de computação do 4º ano.</p>
+
         <p>Soluções simples, rápidas, práticas e patenteável, sem nenhuma concorrência.</p>
         <p>Industrializando a construção de alvenaria, fazendo da montagem obra um lego.</p>
         <p>Introduzindo a construção modular em nível dos menores elementos e escalando a construção civil no mundo.</p>
@@ -69,7 +72,7 @@
                 if(window.innerWidth>=769){
                     navproduto.style.display='none'
                     navparceiros.style.display='none'
-                    navA.style.background='red'
+                    navA.style.background='darkred'
                     navA.style.color='white'
                 }
                 else{
@@ -85,12 +88,12 @@
                         navproduto.style.display='none'
                         navparceiros.style.display='none'
 
-                        navA.style.background='red'
+                        navA.style.background='darkred'
                         navA.style.color='white'
-                        navB.style.background=''
-                        navB.style.color=''
-                        navC.style.background=''
-                        navC.style.color=''
+                        navB.style.background = '';
+                        navB.style.color = '';
+                        navC.style.background = '';
+                        navC.style.color = '';
                     }
                 }
                 else{
@@ -110,7 +113,7 @@
 
                         navA.style.background=''
                         navA.style.color=''
-                        navB.style.background='red'
+                        navB.style.background='darkred'
                         navB.style.color='white'
                         navC.style.background=''
                         navC.style.color=''
@@ -135,7 +138,7 @@
                         navA.style.color=''
                         navB.style.background=''
                         navB.style.color=''
-                        navC.style.background='red'
+                        navC.style.background='darkred'
                         navC.style.color='white'
                     }
                 }
@@ -147,45 +150,45 @@
                     burger.innerText='< Documentos'
                 }
             }
-        
-        function clickMenu(){
-            if(itens.style.display=='block'){
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
+            
+            function clickMenu(){
+                if(itens.style.display=='block'){
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
+                else{
+                    itens.style.display='block'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
             }
-            else{
-                itens.style.display='block'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
-            }
-        }
-        function mudouTamanho(){
-            if(window.innerWidth>=769){
+            function mudouTamanho(){
+                if(window.innerWidth>=769){
                 itens.style.display='flex'
                 navproduto.style.display='none'
                 navparceiros.style.display='none'
                 
                 navhome.style.display='flex'
 
-                navA.style.background='red'
+                navA.style.background='darkred'
                 navA.style.color='white'
                 navB.style.background=''
                 navB.style.color=''
                 navC.style.background=''
                 navC.style.color=''
             }
-            else{
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
+                else{
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 </html>

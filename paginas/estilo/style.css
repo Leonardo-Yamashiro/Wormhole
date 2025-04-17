@@ -177,7 +177,7 @@ header img{
 
 main{
     max-width: 900px;
-    min-width: 350px;
+    min-width: 300px;
     width: 90vw;
     margin: auto;
     padding-top: 30px;
@@ -204,6 +204,11 @@ main h3{
     text-align: left;
     padding: 10px;
     font-size: 1em;
+}
+main h4{
+    color: darkred;
+    text-align: center;
+    padding: 10px;
 }
 main p{
     text-align: justify;
@@ -240,31 +245,11 @@ main a::after{
     content: " [link]";
     font-size: 0.7em;
 }
-s{
-    color: darkred;
-}
-
-div.arquivopdf{
-    display: none;
-    text-align: center;
-    width: 100%;
-    height: 600px;
-    vertical-align: top;
-    padding: 10px 0px;
-}
-iframe{
-    width: 100%;
-    height: 100%;
-    border: 2px solid darkred;
-    overflow-x: auto;
-    overflow-y: auto;
-    background-color: white;
-}
 div.vid{
     margin: auto;
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 @media screen and (min-width: 769px){
@@ -302,10 +287,18 @@ div.vid{
         vertical-align: middle;
     }
 }
+div.mvp{
+    margin: auto;
+    width: 100%;
+    background-color: darkred;
+    padding: 10px;
+}
+div.mvp video{
+    width: 100%;
+}
 
 
 table{
-    min-width: 340px;
     width: 90%;
     margin: auto;
     background-color: white;

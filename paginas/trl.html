@@ -17,9 +17,9 @@
         <nav id="itens" class="navprincipal">
             <img src="imagens/Logo/logo.png" alt="Logo">
             <div>
-                <p onclick="navA1()" id="navA" class="atual">Home &#9776;</p>
+                <p onclick="navA1()" id="navA">Home &#9776;</p>
                 <p onclick="navA2()" id="navB">Produtos &#9776;</p>
-                <p onclick="navA3()" id="navC">Docs para Investidores &#9776;</p>
+                <p onclick="navA3()" id="navC" class="atual">Docs para Investidores &#9776;</p>
                 <a href="sobre.html">Sobre Nós</a>
                 <a href="fale.html">Fale Conosco</a>
             </div>
@@ -56,8 +56,8 @@
     
  
     <main>
-        <h1>TRL</h1>
-        <a href="pdf/investidores/TRL completo.pdf" target="_blank">TRL</a>
+        <h1>TRL do MEGG wOrmhOle System</h1>
+        <a href="pdf/investidores/TRL completo.pdf"  rel="nofollow">TRL</a>
     </main>
 
 
@@ -80,12 +80,12 @@
                         navproduto.style.display='none'
                         navparceiros.style.display='none'
 
-                        navA.style.background='red'
+                        navA.style.background='darkred'
                         navA.style.color='white'
-                        navB.style.background=''
-                        navB.style.color=''
-                        navC.style.background=''
-                        navC.style.color=''
+                        navB.style.background = '';
+                        navB.style.color = '';
+                        navC.style.background = '';
+                        navC.style.color = '';
                     }
                 }
                 else{
@@ -105,7 +105,7 @@
 
                         navA.style.background=''
                         navA.style.color=''
-                        navB.style.background='red'
+                        navB.style.background='darkred'
                         navB.style.color='white'
                         navC.style.background=''
                         navC.style.color=''
@@ -130,7 +130,7 @@
                         navA.style.color=''
                         navB.style.background=''
                         navB.style.color=''
-                        navC.style.background='red'
+                        navC.style.background='darkred'
                         navC.style.color='white'
                     }
                 }
@@ -142,46 +142,45 @@
                     burger.innerText='< Documentos'
                 }
             }
-        
-        function clickMenu(){
-            if(itens.style.display=='block'){
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
-
+            
+            function clickMenu(){
+                if(itens.style.display=='block'){
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
+                else{
+                    itens.style.display='block'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
             }
-            else{
-                itens.style.display='block'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
-            }
-        }
-        function mudouTamanho(){
-            if(window.innerWidth>=769){
+            function mudouTamanho(){
+                if(window.innerWidth>=769){
                 itens.style.display='flex'
                 navproduto.style.display='none'
                 navparceiros.style.display='none'
                 
                 navhome.style.display='flex'
 
-                navA.style.background='red'
+                navA.style.background='darkred'
                 navA.style.color='white'
                 navB.style.background=''
                 navB.style.color=''
                 navC.style.background=''
                 navC.style.color=''
             }
-            else{
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
+                else{
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 </html>

@@ -56,19 +56,19 @@
     
 
     <main>
-        <h1>Características Principais</h1>
-        <p>Esta versão incial de Material Aderente wOrmhOle compreende:</p>
+        <h1>Material Aderente MEGG wOrmhOle</h1>
+        <p>Esta versão inicial de Material Aderente MEGG wOrmhOle compreende:</p>
         <ul>
             <li>Material pronto para uso, com adição de água no momento da aplicação;</li>
-            <li>Fluidez especialmente projetada para a aplicação nos MEEGs wOrmhOle;</li>
+            <li>Fluidez especialmente projetada para a aplicação nos MEEG wOrmhOle;</li>
             <li>Sem adição de pedriscos;</li>
             <li>Saco de 25 kg;</li>
             <li>Cor conforme a cor dos Blocos;</li>
-            <li>1 kg de material seco corresponde a 0,6 litros de graute pronto para aplicação;</li>
+            <li>1 kg de material seco corresponde a 0,5 litros de graute pronto para aplicação;</li>
             <li>Ficha técnica <a href="#">[link]</a>;</li>
             <li>Ficha de informação de segurança do produto químico [link].</li>
         </ul>
-        <p>Nota: A garantia de funcionamento do MEGG wOrmhOle System está relacionada à utilização dos Materias Aderents wOrmhOle especificados no item 2**.</p>
+        <p>Nota: A garantia de funcionamento do MEGG wOrmhOle System está relacionada à utilização dos Materias Aderents MEGG wOrmhOle especificados abaixo:</p>
 
 
         <h1>Materiais</h1>
@@ -102,12 +102,12 @@
                         navproduto.style.display='none'
                         navparceiros.style.display='none'
 
-                        navA.style.background='red'
+                        navA.style.background='darkred'
                         navA.style.color='white'
-                        navB.style.background=''
-                        navB.style.color=''
-                        navC.style.background=''
-                        navC.style.color=''
+                        navB.style.background = '';
+                        navB.style.color = '';
+                        navC.style.background = '';
+                        navC.style.color = '';
                     }
                 }
                 else{
@@ -127,7 +127,7 @@
 
                         navA.style.background=''
                         navA.style.color=''
-                        navB.style.background='red'
+                        navB.style.background='darkred'
                         navB.style.color='white'
                         navC.style.background=''
                         navC.style.color=''
@@ -152,7 +152,7 @@
                         navA.style.color=''
                         navB.style.background=''
                         navB.style.color=''
-                        navC.style.background='red'
+                        navC.style.background='darkred'
                         navC.style.color='white'
                     }
                 }
@@ -164,46 +164,45 @@
                     burger.innerText='< Documentos'
                 }
             }
-        
-        function clickMenu(){
-            if(itens.style.display=='block'){
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
-
+            
+            function clickMenu(){
+                if(itens.style.display=='block'){
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
+                else{
+                    itens.style.display='block'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
             }
-            else{
-                itens.style.display='block'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
-            }
-        }
-        function mudouTamanho(){
-            if(window.innerWidth>=769){
+            function mudouTamanho(){
+                if(window.innerWidth>=769){
                 itens.style.display='flex'
                 navproduto.style.display='none'
                 navparceiros.style.display='none'
                 
                 navhome.style.display='flex'
 
-                navA.style.background='red'
+                navA.style.background='darkred'
                 navA.style.color='white'
                 navB.style.background=''
                 navB.style.color=''
                 navC.style.background=''
                 navC.style.color=''
             }
-            else{
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
+                else{
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 </html>

@@ -81,7 +81,7 @@
                 </tr>
                 <tr>
                     <td>Amarração em X com blocos Genéricos</td>
-                    <td><a href="imagens/Produtos/Image Figs/04_Amar_X-0.jpg" target="_blank" rel="nofollow">Fig.4</a></td>
+                    <td><a href="imagens/Produtos/Image Figs/04_Amar_X-0.jpg" rel="nofollow">Fig.4</a></td>
                 </tr>
                 <tr>
                     <td>Amarração de ombreira de vão Alinhado à parede</td>
@@ -167,12 +167,12 @@
                         navproduto.style.display='none'
                         navparceiros.style.display='none'
 
-                        navA.style.background='red'
+                        navA.style.background='darkred'
                         navA.style.color='white'
-                        navB.style.background=''
-                        navB.style.color=''
-                        navC.style.background=''
-                        navC.style.color=''
+                        navB.style.background = '';
+                        navB.style.color = '';
+                        navC.style.background = '';
+                        navC.style.color = '';
                     }
                 }
                 else{
@@ -192,7 +192,7 @@
 
                         navA.style.background=''
                         navA.style.color=''
-                        navB.style.background='red'
+                        navB.style.background='darkred'
                         navB.style.color='white'
                         navC.style.background=''
                         navC.style.color=''
@@ -217,7 +217,7 @@
                         navA.style.color=''
                         navB.style.background=''
                         navB.style.color=''
-                        navC.style.background='red'
+                        navC.style.background='darkred'
                         navC.style.color='white'
                     }
                 }
@@ -229,45 +229,45 @@
                     burger.innerText='< Documentos'
                 }
             }
-        
-        function clickMenu(){
-            if(itens.style.display=='block'){
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
+            
+            function clickMenu(){
+                if(itens.style.display=='block'){
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
+                else{
+                    itens.style.display='block'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
             }
-            else{
-                itens.style.display='block'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
-            }
-        }
-        function mudouTamanho(){
-            if(window.innerWidth>=769){
+            function mudouTamanho(){
+                if(window.innerWidth>=769){
                 itens.style.display='flex'
                 navproduto.style.display='none'
                 navparceiros.style.display='none'
                 
                 navhome.style.display='flex'
 
-                navA.style.background='red'
+                navA.style.background='darkred'
                 navA.style.color='white'
                 navB.style.background=''
                 navB.style.color=''
                 navC.style.background=''
                 navC.style.color=''
             }
-            else{
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
+                else{
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 </html>

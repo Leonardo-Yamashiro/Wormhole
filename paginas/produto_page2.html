@@ -56,21 +56,10 @@
     
 
     <main>
-        <h1>Códigos de Identificação</h1>
-        <table>
-            <thead>
-                <th scope="col">A</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>A</td>
-                </tr>
-            </tbody>
-        </table>
+        <h1>Esquadrias MEGG wOrmhOle</h1>
 
 
-        <h1>Características Principais</h1>
-        <p>Esta versão incial das Esquadrias wOrmhOle compreende:</p>
+        <p>Esta versão inicial das Esquadrias MEGG wOrmhOle compreende:</p>
         <ul>
             <li>Esquadria com acabamento final de fábrica;</li>
             <li>Dimensões modulares reais com tolerâncias dimensionais e geométricas menores do que 1 mm;</li>
@@ -91,13 +80,13 @@
         </ol>
 
 
-        <h1>Grupos de Esquadrias wOrmhOle</h1>
+        <h1>Grupos de Esquadrias MEGG wOrmhOle</h1>
         <h3>P: Portas</h3>
         <h3>J: Janelas</h3>
 
 
         <h1>Códigos de Identificação</h1>
-        <p>Estrutura genérica:<strong> MEEG-XY-Z...</strong></p>
+        <p>Estrutura genérica:<strong> MEGG-XY-Z...</strong></p>
         <p>Onde:</p>
         <ol>
             <li>MEGG = Modular Elements Grouted in Group (Elementos Modulares Grauteados em Grupo).</li>
@@ -126,12 +115,12 @@
                         navproduto.style.display='none'
                         navparceiros.style.display='none'
 
-                        navA.style.background='red'
+                        navA.style.background='darkred'
                         navA.style.color='white'
-                        navB.style.background=''
-                        navB.style.color=''
-                        navC.style.background=''
-                        navC.style.color=''
+                        navB.style.background = '';
+                        navB.style.color = '';
+                        navC.style.background = '';
+                        navC.style.color = '';
                     }
                 }
                 else{
@@ -151,7 +140,7 @@
 
                         navA.style.background=''
                         navA.style.color=''
-                        navB.style.background='red'
+                        navB.style.background='darkred'
                         navB.style.color='white'
                         navC.style.background=''
                         navC.style.color=''
@@ -176,7 +165,7 @@
                         navA.style.color=''
                         navB.style.background=''
                         navB.style.color=''
-                        navC.style.background='red'
+                        navC.style.background='darkred'
                         navC.style.color='white'
                     }
                 }
@@ -188,46 +177,45 @@
                     burger.innerText='< Documentos'
                 }
             }
-        
-        function clickMenu(){
-            if(itens.style.display=='block'){
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
-
+            
+            function clickMenu(){
+                if(itens.style.display=='block'){
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
+                else{
+                    itens.style.display='block'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                    burger.innerText='Menu'
+                }
             }
-            else{
-                itens.style.display='block'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                burger.innerText='Menu'
-            }
-        }
-        function mudouTamanho(){
-            if(window.innerWidth>=769){
+            function mudouTamanho(){
+                if(window.innerWidth>=769){
                 itens.style.display='flex'
                 navproduto.style.display='none'
                 navparceiros.style.display='none'
                 
                 navhome.style.display='flex'
 
-                navA.style.background='red'
+                navA.style.background='darkred'
                 navA.style.color='white'
                 navB.style.background=''
                 navB.style.color=''
                 navC.style.background=''
                 navC.style.color=''
             }
-            else{
-                itens.style.display='none'
-                navhome.style.display='none'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
+                else{
+                    itens.style.display='none'
+                    navhome.style.display='none'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 </html>
