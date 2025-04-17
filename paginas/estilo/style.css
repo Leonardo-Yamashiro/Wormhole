@@ -45,7 +45,7 @@ nav a,nav p{
     vertical-align: middle;
 }
 nav a:hover, nav p:hover{
-    background-color: red;
+    background-color: darkred;
     color: white;
     cursor: pointer;
     transition-duration: 0.7s;
