@@ -17,7 +17,7 @@
         <nav id="itens" class="navprincipal">
             <img src="imagens/Logo/logo.png" alt="Logo">
             <div>
-                <p onclick="navA1()" id="navA" class="atual">Home &#9776;</p>
+                <p onclick="navA1()" id="navA">Home &#9776;</p>
                 <p onclick="navA2()" id="navB">Produtos &#9776;</p>
                 <p onclick="navA3()" id="navC">Docs para Investidores &#9776;</p>
                 <a href="sobre.html">Sobre Nós</a>
@@ -71,6 +71,8 @@
                 if(window.innerWidth>=769){
                     navproduto.style.display='none'
                     navparceiros.style.display='none'
+                    navA.style.background='darkred'
+                    navA.style.color='white'
                 }
                 else{
                     navproduto.style.display='none'

@@ -18,7 +18,7 @@
             <img src="imagens/Logo/logo.png" alt="Logo">
             <div>
                 <p onclick="navA1()" id="navA">Home &#9776;</p>
-                <p onclick="navA2()" id="navB" class="atual">Produtos &#9776;</p>
+                <p onclick="navA2()" id="navB">Produtos &#9776;</p>
                 <p onclick="navA3()" id="navC">Docs para Investidores &#9776;</p>
                 <a href="sobre.html">Sobre Nós</a>
                 <a href="fale.html">Fale Conosco</a>
@@ -66,6 +66,8 @@
                 if(window.innerWidth>=769){
                     navhome.style.display='none'
                     navparceiros.style.display='none'
+                    navB.style.background='darkred'
+                    navB.style.color='white'
                 }
                 else{
                     navproduto.style.display='none'

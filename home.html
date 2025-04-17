@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEGG wOrmhOle/Vídeo MEGG wOrmhOle</title>
+    <title>MEGG wOrmhOle</title>
     <link rel="shortcut icon" href="paginas/imagens/Logo/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="paginas/estilo/style.css" media="screen">
     <link rel="stylesheet" href="paginas/estilo/print.css" media="print">
@@ -23,7 +23,7 @@
         <nav id="itens" class="navprincipal">
             <img src="paginas/imagens/Logo/logo.png" alt="Logo">
             <div>
-                <p onclick="navA1()" id="navA" class="atual">Home &#9776;</p>
+                <p onclick="navA1()" id="navA">Home &#9776;</p>
                 <p onclick="navA2()" id="navB">Produtos &#9776;</p>
                 <p onclick="navA3()" id="navC">Docs para Investidores &#9776;</p>
                 <a href="paginas/sobre.html">Sobre Nós</a>
@@ -72,6 +72,8 @@
                 if(window.innerWidth>=769){
                     navproduto.style.display='none'
                     navparceiros.style.display='none'
+                    navA.style.background='darkred'
+                    navA.style.color='white'
                 }
                 else{
                     navproduto.style.display='none'
