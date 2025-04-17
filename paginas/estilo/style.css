@@ -249,7 +249,7 @@ div.vid{
     margin: auto;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 @media screen and (min-width: 769px){
@@ -260,38 +260,20 @@ div.vid{
     div.vid video{
         height: 100%;
     }
-    p.mensagemHOME{
-        display: none;
-    }
 }
 @media screen and (max-width: 768px){
     div.vid{
-        height: 50%;
+        width: 100%;
     }
     div.vid video{
         width: 100vw;
     }
-    p.mensagemHOME{
-        display: block;
-        text-align: center;
-        color: black;
-        background-color: white;
-        width: 90vw;
-        margin: auto;
-        padding: 10px;
-        border-radius: 20px;
-        border: 2px solid darkred;
-    }
-    p.mensagemHOME > span{
-        display: inline;
-        vertical-align: middle;
-    }
 }
 div.mvp{
     margin: auto;
+    height: 100%;
     width: 100%;
     background-color: darkred;
-    padding: 10px;
 }
 div.mvp video{
     width: 100%;
