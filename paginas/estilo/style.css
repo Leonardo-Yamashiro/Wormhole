@@ -180,7 +180,6 @@ main{
     min-width: 300px;
     width: 90vw;
     margin: auto;
-    padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 20px;
 }
@@ -254,8 +253,7 @@ div.vid{
 }
 @media screen and (min-width: 769px){
     div.vid{
-        margin-top: 50px;
-        height: calc(100% - 100px);
+        height: calc(100% - 50px);
     }
     div.vid video{
         height: 100%;

@@ -60,29 +60,34 @@
             <video src="video/00_MVP_Site.mp4" controls  type="video/mp4"></video>
         </div>
 
-    <script>
+        <script>
             function navarrumado(){
-                if(window.innerWidth>=769){
-                    navproduto.style.display='none'
-                    navhome.style.display='none'
-                    navC.style.background='darkred'
-                    navC.style.color='white'
-                }
-                else{
-                    navproduto.style.display='none'
-                    navparceiros.style.display='none'
-                    navhome.style.display='none'
-                }
+                navproduto.style.display='none'
+                navparceiros.style.display='none'
+                navhome.style.display='none'
             }
+            
             function navA1(){
                 if(window.innerWidth>=769){
                     if(navhome.style.display=='none'){
                         navhome.style.display='flex'
                         navproduto.style.display='none'
                         navparceiros.style.display='none'
-
+                        
                         navA.style.background='darkred'
                         navA.style.color='white'
+                        navB.style.background = '';
+                        navB.style.color = '';
+                        navC.style.background = '';
+                        navC.style.color = '';
+                    }
+                    else{
+                        navproduto.style.display='none'
+                        navparceiros.style.display='none'
+                        navhome.style.display='none'
+                        
+                        navA.style.background = '';
+                        navA.style.color = '';
                         navB.style.background = '';
                         navB.style.color = '';
                         navC.style.background = '';
@@ -103,13 +108,25 @@
                         navproduto.style.display='flex'
                         navhome.style.display='none'
                         navparceiros.style.display='none'
-
+        
                         navA.style.background=''
                         navA.style.color=''
                         navB.style.background='darkred'
                         navB.style.color='white'
                         navC.style.background=''
                         navC.style.color=''
+                    }
+                    else{
+                        navproduto.style.display='none'
+                        navparceiros.style.display='none'
+                        navhome.style.display='none'
+                        
+                        navA.style.background = '';
+                        navA.style.color = '';
+                        navB.style.background = '';
+                        navB.style.color = '';
+                        navC.style.background = '';
+                        navC.style.color = '';
                     }
                 }
                 else{
@@ -126,13 +143,25 @@
                         navparceiros.style.display='flex'
                         navhome.style.display='none'
                         navproduto.style.display='none'
-
+                        
                         navA.style.background=''
                         navA.style.color=''
                         navB.style.background=''
                         navB.style.color=''
                         navC.style.background='darkred'
                         navC.style.color='white'
+                    }
+                    else{
+                        navproduto.style.display='none'
+                        navparceiros.style.display='none'
+                        navhome.style.display='none'
+                        
+                        navA.style.background = '';
+                        navA.style.color = '';
+                        navB.style.background = '';
+                        navB.style.color = '';
+                        navC.style.background = '';
+                        navC.style.color = '';
                     }
                 }
                 else{
@@ -162,26 +191,27 @@
             }
             function mudouTamanho(){
                 if(window.innerWidth>=769){
-                itens.style.display='flex'
-                navproduto.style.display='none'
-                navparceiros.style.display='none'
-                
-                navhome.style.display='flex'
-
-                navA.style.background='darkred'
-                navA.style.color='white'
-                navB.style.background=''
-                navB.style.color=''
-                navC.style.background=''
-                navC.style.color=''
-            }
+                    itens.style.display='flex'
+                    navproduto.style.display='none'
+                    navparceiros.style.display='none'
+                        
+                    navhome.style.display='flex'
+        
+                    navA.style.background='darkred'
+                    navA.style.color='white'
+                    navB.style.background=''
+                    navB.style.color=''
+                    navC.style.background=''
+                    navC.style.color=''
+                }
                 else{
                     itens.style.display='none'
+        
                     navhome.style.display='none'
                     navproduto.style.display='none'
                     navparceiros.style.display='none'
                 }
             }
-        </script>
+            </script>
 </body>
 </html>
