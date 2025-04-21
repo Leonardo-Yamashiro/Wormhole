@@ -279,6 +279,13 @@ div.mvp{
 div.mvp video{
     height: 100%;
 }
+div.imaggraf{
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 table{
