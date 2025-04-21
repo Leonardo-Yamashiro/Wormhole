@@ -180,14 +180,11 @@ main{
     min-width: 300px;
     width: 90vw;
     margin: auto;
+    margin-top: 30px;
     padding-bottom: 30px;
     border-radius: 20px;
 }
-@media screen and (min-width: 769px){
-    main{
-        margin-top: 50px;
-    }
-}
+
 main h1{
     color: darkred;
     text-align: center;
@@ -279,12 +276,29 @@ div.mvp{
 div.mvp video{
     height: 100%;
 }
-div.imaggraf{
+picture.imaggraf{
     margin: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+}
+@media screen and (min-width: 769px){
+    img.imageA{
+        display: none;
+    }
+    img.imageB{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px){
+    img.imageA{
+        display: block;
+    }
+    img.imageB{
+        display: none;
+    }
 }
 
 
