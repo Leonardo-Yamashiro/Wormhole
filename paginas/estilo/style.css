@@ -180,7 +180,7 @@ header img{
 main{
     max-width: 900px;
     min-width: 300px;
-    width: 90vw;
+    width: 90%;
     margin: auto;
     margin-top: 30px;
     padding-bottom: 30px;
@@ -284,7 +284,7 @@ picture.imaggraf{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 30px 0px;
 }
 @media screen and (min-width: 769px){
     img.imageA{
@@ -292,13 +292,13 @@ picture.imaggraf{
     }
     img.imageB{
         display: block;
-        width: 90vw;
+        width: 100%;
     }
 }
 @media screen and (max-width: 768px){
     img.imageA{
         display: block;
-        width: 99vw;
+        width: 100%;
     }
     img.imageB{
         display: none;
@@ -307,7 +307,7 @@ picture.imaggraf{
 
 
 table{
-    width: 90%;
+    width: 100%;
     margin: auto;
     background-color: white;
     border: 2px solid darkred;
