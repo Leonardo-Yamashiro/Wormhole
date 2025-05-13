@@ -352,6 +352,7 @@ footer{
 }
 footer p{
     padding: 10px;
+    font-variant: small-caps;
 }
 footer div.links{
     margin: auto;
