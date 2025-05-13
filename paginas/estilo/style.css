@@ -250,6 +250,10 @@ div.vid{
     justify-content: flex-start;
     align-items: center;
 }
+div.vid video{
+    width: 100%;
+}
+/*
 @media screen and (min-width: 769px){
     div.vid{
         height: calc(100% - 50px);
@@ -266,6 +270,7 @@ div.vid{
         width: 100vw;
     }
 }
+*/
 div.mvp{
     margin: auto;
     height: calc(100% - 50px);
