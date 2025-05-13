@@ -359,11 +359,18 @@ footer ul{
     margin-left: 50px;
     text-align: start;
 }
+footer ul li.titulo{
+    list-style-type: none;
+    transform: translate(-20px); 
+}
 footer ul li a{
     color: white;
     text-decoration: none;
+    border-radius: 5px;
 }
 footer ul li a:hover{
+    background-color: white;
+    color: darkred;
     cursor: pointer;
 }
 footer ul li  a::after{
