@@ -354,6 +354,8 @@ footer p{
     padding: 10px;
 }
 footer div.links{
+    margin: auto;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -362,11 +364,16 @@ footer div.links{
 footer ul{
     margin-right: 50px;
     margin-left: 50px;
+    margin-bottom: 50px;
     text-align: start;
+    flex: 1 1 200px;
+    list-style-position: inside;
+}
+footer li{
+    padding: 5px;
 }
 footer li.titulo{
     list-style-type: none;
-    transform: translate(-20px); 
 }
 footer ul a{
     color: white;
