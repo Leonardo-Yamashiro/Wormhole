@@ -343,7 +343,7 @@ table col.clink,table col.cutil,table col.cdese{
 
 
 footer{
-    background-color: darkred;
+    background-image: linear-gradient(to bottom, darkred,rgb(90, 0, 0));
     min-height: 200px;
     width: 100%;
     color: white;
@@ -378,11 +378,9 @@ footer li.titulo{
 footer ul a{
     color: white;
     text-decoration: none;
-    border-radius: 5px;
 }
 footer ul a:hover{
-    background-color: white;
-    color: darkred;
+    text-shadow: 2px 2px 3px white, 0 0 5px white;
     cursor: pointer;
 }
 footer ul a::after{
