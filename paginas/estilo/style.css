@@ -183,7 +183,7 @@ main{
     width: 90%;
     margin: auto;
     margin-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     border-radius: 20px;
 }
 
@@ -349,9 +349,26 @@ footer{
     color: white;
     padding: 10px;
     text-align: center;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.397);
-    position: fixed;
-    bottom: 0;
+}
+footer p{
+    padding: 10px;
+}
+footer ul{
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: start;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    cursor: pointer;
+}
+footer ul li  a::after{
+    content: " [link]";
+    font-size: 0.7em;
 }
 
 
