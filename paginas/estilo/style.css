@@ -76,6 +76,10 @@ header img{
     vertical-align: middle;
 }
 
+    nav#navhome, nav#navproduto, nav#navparceiros{
+        display: none;
+    }
+
 @media screen and (min-width: 769px){
     header{
         overflow-y: hidden;
@@ -135,7 +139,7 @@ header img{
     nav a, nav p{
         display: block;
         color: darkred;
-        background-color: lightgrey;
+        background-color: lightgray;
         border: 2px solid darkred;
         border-top: 0px;
     }
@@ -250,10 +254,6 @@ div.vid{
     justify-content: flex-start;
     align-items: center;
 }
-div.vid video{
-    width: 100%;
-}
-/*
 @media screen and (min-width: 769px){
     div.vid{
         height: calc(100% - 50px);
@@ -270,7 +270,7 @@ div.vid video{
         width: 100vw;
     }
 }
-*/
+
 div.mvp{
     margin: auto;
     height: calc(100% - 50px);
@@ -365,7 +365,7 @@ footer div.links{
 footer ul{
     margin-right: 50px;
     margin-left: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     text-align: start;
     flex: 1 1 200px;
     list-style-position: inside;
