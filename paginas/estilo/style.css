@@ -253,6 +253,7 @@ div.vid{
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 @media screen and (min-width: 769px){
     div.vid{
@@ -270,11 +271,18 @@ div.vid{
         width: 100vw;
     }
 }
+div.vid > img.capa {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 2;
+}
 
 div.mvp{
     margin: auto;
     height: calc(100% - 50px);
-    background-image: linear-gradient(to top, darkred, transparent);
+    background-color: black;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;

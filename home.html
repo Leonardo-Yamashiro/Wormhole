@@ -10,7 +10,7 @@
     <script src="paginas/javascript/codigo.js"></script>
     <style>
         div.vid{
-            background-image: linear-gradient(to bottom, whitesmoke,darkred);
+            background-color: black;
         }
     </style>
    
@@ -63,8 +63,9 @@
     
 
     <div class="vid">
-        <video loop  playsinline controls>
-            <source src="paginas/video/00_MVP_Site.mp4" controls  type="video/mp4"></source>
+        <img id="imgcapa" class="capa" src="paginas/imagens/Teste.png" alt="Imagem de Capa">
+        <video playsinline controls id="vidprincipal">
+            <source src="paginas/video/00_MVP_Site.mp4"  type="video/mp4"></source>
         </video>
     </div>
 
@@ -104,5 +105,15 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        const video = document.getElementById('vidprincipal');
+        const cover = document.getElementById('imgcapa');
+
+        cover.addEventListener('click', () => {
+            cover.style.display = 'none';
+            video.play();
+        });
+    </script>
 </body>
 </html>
