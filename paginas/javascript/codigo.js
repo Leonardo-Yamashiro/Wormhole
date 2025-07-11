@@ -110,22 +110,23 @@ function navA3(){
     }
 }
 
-function clickMenu(){
-    if(itens.style.display=='block'){
-        itens.style.display='none'
-        navhome.style.display='none'
-        navproduto.style.display='none'
-        navparceiros.style.display='none'
-        burger.innerHTML=' &#9776;'
+    function clickMenu(){
+        if(itens.style.display=='block'){
+            itens.style.display='none'
+            navhome.style.display='none'
+            navproduto.style.display='none'
+            navparceiros.style.display='none'
+            burger.innerHTML=' &#9776;'
+        }
+        else{
+            itens.style.display='block'
+            navhome.style.display='none'
+            navproduto.style.display='none'
+            navparceiros.style.display='none'
+            burger.innerHTML=' &#9776;'
+        }
     }
-    else{
-        itens.style.display='block'
-        navhome.style.display='none'
-        navproduto.style.display='none'
-        navparceiros.style.display='none'
-        burger.innerHTML=' &#9776;'
-    }
-}
+    
 function mudouTamanho(){
     if(window.innerWidth>=769){
         itens.style.display='flex'
